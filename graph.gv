@@ -194,4 +194,10 @@ digraph {
                 "New York Drill" -> { "Sample Drill" "Sexy Drill" };
             "Plugg" -> { "Ambient Plugg" "Dark Plugg" "PluggnB" };
                 "PluggnB" -> "Asian Rock";
+    
+    # Industrial & Noise
+    "Industrial & Noise" -> { "Industrial" "Noise" "Post-Industrial" };
+        "Post-Industrial" -> { "Dark Ambient" "Deconstructed Club" "EBM" "Electro-Industrial" "Industrial Hardcore" "Industrial Hip Hop" "Industrial Metal" "Industrial Rock" "Industrial Techno" "Martial Industrial" "Power Noise" };
+            "Electro-Industrial" -> "Dark Electro";
+            "Industrial Metal" -> { "Cyber Metal" "Neue Deutsche Härte" };
 }
