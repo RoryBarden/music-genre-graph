@@ -1,0 +1,96 @@
+digraph {
+    # Ambient
+    "Ambient" -> { "Ambient Americana" "Dark Ambient" "Space Ambient" "Tribal Ambient" };
+        "Dark Ambient" -> { "Black Ambient" "Ritual Ambient" };
+    
+    # Blues
+    "Blues" -> { "Acoustic Blues" "Boogie Woogie" "Country Blues" "Electric Blues" "Fife and Drum Blues" "Jump Blues" "Piano Blues" "Soul Blues" "Vaudeville Blues" };
+        "Acoustic Blues" -> { "Acoustic Chicago Blues" "Acoustic Texas Blues" "Jug Band" "Piedmont Blues" };
+        "Country Blues" -> { "Acoustic Texas Blues" "Delta Blues" "Hill Country Blues" "Piedmont Blues" };
+        "Electric Blues" -> { "British Blues" "Chicago Blues" "Electric Texas Blues" "Swamp Blues" };
+
+    # Classical Music
+    "Classical Music" -> { "Buganda Royal Court Music" "East Asian Classical Music" "Inkiranya" "Kete" "Maqāmic Music" "Minyue" "Pìobaireachd" "South Asian Classical Music" "Southeast Asian Classical Music" "Tibetan Buddhist Chant" "Western Classical Music"};
+        "East Asian Classical Music" -> { "Chinese Classical Music" "Japanese Classical Music" "Korean Classical Music" "Vietnamese Court Music" };
+            "Chinese Classical Music" -> { "Baisha xiyue" "Chinese Literati Music" "Dongjing" "Yayue" };
+            "Japanese Classical Music" -> { "Gagaku" "Heikyoku" "Honkyoku" "Jiuta" "Jōruri" "Meiji shinkyoku" "Nagauta" "Noh" "Shōmyō" "Sōkyoku" };
+                "Sōkyoku" -> { "Danmono" "Kumiuta" };
+            "Korean Classical Music" -> { "Aak" "Dang-ak" "Hyang-ak" "Jeong-ak" };
+                "Jeong-ak" -> "Gagok";
+            "Vietnamese Court Music" -> "Vietnamese Opera";
+        "Maqāmic Music" -> { "Arabic Classical Music" "Azerbaijani Mugham"          "Persian Classical Music" "Shashmaqam" "Sufiana kalam" "Turkish Classical Music" "Twelve Muqam" };
+            "Arabic Classical Music" -> { "Andalusian Classical Music" "Iraqi Maqam" "Sawt" };
+            "Turkish Classical Music" -> "Turkish Mevlevi Music";
+        "South Asian Classical Music" -> { "Carnatic Classical Music" "Hindustani Classical Music" "Odissi Classical Music" };
+            "Carnatic Classical Music" -> "Konnakol";
+            "Hindustani Classical Music" -> { "Dhrupad" "Kafi" "Khayal" "Klasik" "Qawwali" "Shabad kirtan" "Tarana" "Thumri" };
+        "Southeast Asian Classical Music" -> { "Burmese Classical Music" "Gamelan" "Kacapi suling" "Kakawin" "Kulintang" "Mahori" "Malay Classical Music" "Pinpeat" "Saluang klasik" "Talempong" "Tembang Sunda Cianjuran" "Thai Classical Music" };
+            "Gamelan" -> { "Balinese Gamelan" "Gamelan degung" "Javanese Gamelan" "Malay Gamelan" };
+                "Balinese Gamelan" -> { "Gamelan angklung" "Gamelan beleganjur" "Gamelan gender wayang" "Gamelan gong gede" "Gamelan gong kebyar" "Gamelan jegog" "Gamelan selonding" "Gamelan semar pegulingan" };
+                "Javanese Gamelan" -> { "Gamelan sekaten" "Solonese Gamelan" };
+            "Malay Classical Music" -> "Malay Gamelan";
+            "Thai Classical Music" -> { "Fon leb" "Khrueang sai" "Piphat" };
+        "Western Classical Music" -> { "Art Song" "Bagatelle" "Ballet" "Baroque Music" "Baroque Suite" "Brazilian Classical Music" "Byzantine Music" "Cantata" "Canzona" "Capriccio" "Chamber Music" "Character Piece" "Choral" "Cinematic Classical" "Classical Period" "Divertissement" "English Pastoral School" "Étude" "Fantasia" "Fugue" "Impromptu" "Latin American Classical Music" "Light Music" "Madrigal" "Medieval Classical Music" "Modern Classical" "Motet" "Neoclassicism" "Nocturne" "Opera" "Oratorio" "Orchestral Music" "Overture" "Passion" "Prelude" "Renaissance Music" "Ricercar" "Romanticism" "Serenade" "Sonata" "Spanish Classical Music" "Theme and Variation" "Toccata" };
+            "Art Song" -> { "Elizabethan Song" "Lied" "Mélodie" "Orchestral Song" };
+            "Ballet" -> { "Ballet de cour" "Comédie-ballet" "Opéra-ballet" };
+            "Baroque Music" -> { "Ballet de cour" "Comédie-ballet" "Opéra-ballet" "Zarzuela barroca" };
+            "Brazilian Classical Music" -> "Valsa brasileira";
+            "Byzantine Music" -> "Byzantine Chant";
+            "Chamber Music" -> "String Quartet";
+            "Choral" -> { "Choral Concerto" "Choral Symphony" "Mass" };
+                "Mass" -> "Requiem";
+            "Cinematic Classical" -> { "Epic Music" "Spaghetti Western" };
+            "Medieval Classical Music" -> { "Ars antiqua" "Ars nova" "Ars subtilior" "Contenance angloise" "Medieval Lyric Poetry" "Plainsong" };
+                "Plainsong" -> { "Ambrosian Chant" "Canto beneventano" "Canto mozárabe" "Celtic Chant" "Gallican Chant" "Gregorian Chant" "Old Roman Chant" };
+                    "Gregorian Chant" -> "Sarum Chant";
+            "Modern Classical" -> { "American Gamelan" "Expressionism" "Futurism" "Impressionism" "Indeterminacy" "Microtonal Classical" "Minimalism" "Musique concrète instrumentale" "New Complexity" "Post-Minimalism" "Process Music" "Serialism" "Sonorism" "Spectralism" "Stochastic Music" };
+                "Minimalism" -> "Holy Minimalism";
+                "Post-Minimalism" -> "Totalism";
+                "Serialism" -> "Integral Serialism";
+            "Opera" -> { "Ballad Opera" "Grand opéra" "Monodrama" "Opéra-ballet" "Opera buffa" "Opéra-comique" "Opera semiseria" "Opera seria" "Operetta" "Romantische Oper" "Singspiel" "Tragédie en musique" "Verismo" "Zarzuela" "Zeitoper" };
+                "Operetta" -> "Kalon'ny fahiny";
+                "Zarzuela" -> { "Género chico" "Zarzuela barroca" "Zarzuela grande" };
+            "Orchestral Music" -> { "Concert Band" "Concerto" "Orchestral Song" "Symphonic Mugham" "Symphony" "Tone Poem" };
+                "Concerto" -> { "Concerto for Orchestra" "Concerto grosso" "Sinfonia concertante" };
+                "Symphony" -> { "Choral Symphony" "Sinfonia concertante" };
+            "Renaissance Music" -> { "Contenance angloise" "Elizabethan Song" "Franco-Flemish School" };
+            "Romanticism" -> { "Grand opéra" "New German School" "Romantische Oper" };
+            "Spanish Classical Music" -> { "Canto mozárabe" "Zarzuela" }
+
+
+
+
+
+    # Country
+    "Country" -> { "Alt-Country" "Bluegrass" "Contemporary Country" "Country & Irish" "Country Boogie" "Country Folk" "Country Pop" "Honky Tonk" "Nashville Sound" "Progressive Country" "Traditional Country" "Western" "Western Swing" };
+        "Alt-Country" -> "Gothic Country";
+        "Bluegrass" -> { "Progressive Bluegrass" "Traditional Bluegrass" };
+            "Progressive Bluegrass" -> "Jamgrass";
+            "Traditional Bluegrass" -> "Bluegrass Gospel";
+        "Contemporary Country" -> { "Bro-Country" "Neo-Traditionalist Country" }
+        "Country Pop" -> { "Bro-Country" "Countrypolitan" "Urban Cowboy" };
+        "Honky Tonk" -> { "Bakersfield Sound" "Truck Driving Country" };
+        "Nashville Sound" -> "Countrypolitan";
+        "Progressive Country" -> "Outlaw Country";
+        "Traditional Country" -> { "Close Harmony" "Country Gospel" "Country Yodeling" "Traditional Bluegrass" };
+        "Country Gospel" -> "Bluegrass Gospel";
+
+    #todo: dance
+
+    # Easy Listening
+    "Easy Listening" -> { "Cocktail Nation" "Exotica" "Light Music" "Lounge" "Pops Orchestra" "Space Age Pop" };
+        "Exotica" -> "Sitarsploitation";
+
+    # todo: electronic
+
+    # Experimental
+    "Experimental" -> { "Conducted Improvisation" "Data Sonification" "Drone" "Electroacoustic" "Free Improvisation" "Futurism" "Glitch" "Graphical Sound" "Indeterminancy" "Industrial" "Micromontage" "Modern Creative" "Musique concrète instrumentale" "Noise" "Plunderphonics" "Reductionism" "Sound Art" "Sound Collage" "Sound Poetry" "Tape Music" "Turntable Music" };
+        "Electroacoustic" -> { "Acousmatic Music" "EAI" "Musique concrète" };
+        "Free Improvisation" -> "EAI";
+        "Industrial" -> "Power Electronics";
+            "Power Electronics" -> "Death Industrial";
+        "Noise" -> { "Ambient Noise Wall" "Black Noise" "Gorenoise" "Harsh Noise" "Power Electronics" "Power Noise" };
+            "Harsh Noise" -> "Harsh Noise Wall";
+        "Reductionism" -> { "Lowercase" "Onkyo" };
+        "Sound Collage" -> "Epic Collage";
+}
