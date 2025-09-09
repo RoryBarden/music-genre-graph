@@ -158,7 +158,29 @@ digraph {
     "Easy Listening" -> { "Cocktail Nation" "Exotica" "Light Music" "Lounge" "Pops Orchestra" "Space Age Pop" };
         "Exotica" -> "Sitarsploitation";
 
-    # todo: electronic
+    # Electronic
+    "Electronic" -> { "Acholitronix" "Algorave" "Binaural Beats" "Bit Music" "Bitpop" "Celtic Electronica" "Chillout" "Digital Fusion" "Drift Phonk" "Dungeon Synth" "Electroacoustic" "Electro Hop" "Electro-Industrial" "Electronic Dance Music" "Electropop" "Epic Collage" "Flashcore" "Folktronica" "Funktronica" "Glitch" "Glitch Hop" "Graphical Sound" "HexD" "Horror Synth" "Hyperpop" "IDM" "Illbient" "Indietronica" "Latin Electronic" "Livetronica" "Maloya électronique" "Micromontage" "Minimal Wave" "Moogsploitation" "Nightcore" "Nu Jazz" "Power Electronics" "Power Noise" "Progressive Electronic" "Space Ambient" "Synthpop" "Synth Punk" "Synthwave" "Tecnobrega" "Vapor" "Wave" "Witch House" };
+        "Bit Music" -> { "Chiptune" "FM Synthesis" "MIDI Music" "Sequencer & Tracker" };
+            "MIDI Music" -> "Black MIDI";
+            "Sequencer & Tracker" -> { "16-bit" "Tracker Music" "Amigacore" "Demostyle"}
+                "Demostyle" -> "Doskpop";
+        "Chillout" -> { "Ambient Dub" "Ambient House" "Ambient Trance" "Balearic Beat" "Barber Beats" "Downtempo" "Psybient" };
+            "Downtempo" -> "Trip Hop";
+        "Drift Phonk" -> { "Brazilian Phonk" "Phonk House" };
+        "Dungeon Synth" -> { "Comfy Synth" "Winter Synth" };
+        "HexD" -> "Krushclub"
+        "IDM" -> "Drill and Bass";
+        "Indietronica" -> { "Chillwave" "Glitch Pop" "Picopop" };
+            "Chillwave" -> "Chillsynth";
+        "Latin Electronic" -> { "Changa tuki" "Digital Cumbia" "Electro latino" "Electrotango" "Nortec" "Tribal Guarachero" };
+        "Minimal Wave" -> "Minimal Synth";
+        "Progressive Electronic" -> "Berlin School";
+        "Synthpop" -> { "Futurepop" "Pon-chak disco" "Techno kayō" };
+        "Synthwave" -> { "Chillsynth" "Darksynth" "Sovietwave" };
+        "Tecnobrega" -> "Tecnofunk";
+        "Vapor" -> { "Barber Beats" "Dreampunk" "Future Funk" "Hardvapour" "Utopian Virtual" "Vapornoise" "Vaportrap" "Vaporwave" };
+            "Vaporwave" -> { "Broken Transmission" "Eccojams" "Mallsoft" "Slushwave" };
+        "Wave" -> { "Hardwave" "Neo-Grime" }
 
     # Experimental
     "Experimental" -> { "Conducted Improvisation" "Data Sonification" "Drone" "Electroacoustic" "Free Improvisation" "Futurism" "Glitch" "Graphical Sound" "Indeterminancy" "Industrial" "Micromontage" "Modern Creative" "Musique concrète instrumentale" "Noise" "Plunderphonics" "Reductionism" "Sound Art" "Sound Collage" "Sound Poetry" "Tape Music" "Turntable Music" };
