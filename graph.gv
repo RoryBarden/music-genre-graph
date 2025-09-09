@@ -170,4 +170,28 @@ digraph {
             "Harsh Noise" -> "Harsh Noise Wall";
         "Reductionism" -> { "Lowercase" "Onkyo" };
         "Sound Collage" -> "Epic Collage";
+    
+    # todo: folk
+
+    # Hip Hop
+    "Hip Hop" -> { "Abstract Hip Hop" "Afroswing" "Afro Trap" "Arabesque Rap" "Bongo Flava" "Boom Bap" "Bounce" "Chipmunk Soul" "Chopped and Screwed" "Christian Hip Hop" "Cloud Rap" "Comedy Rap" "Conscious Hip Hop" "Country Rap" "Crunk" "Detroit Sound" "Digicore" "Dirty South" "Disco Rap" "Drumless" "Emo Rap" "Experimental Hip Hop" "Genge" "G-Funk" "Hardcore Hip Hop" "Hipco" "Hiplife" "Hyphy" "Instrumental Hip Hop" "Jazz Rap" "Jerk" "Jersey Club Rap" "Jigg" "Jook" "Latin Rap" "Lo-Fi Hip Hop" "Lowend" "Miami Bass" "Mobb Music" "Motswako" "Nerdcore Hip Hop" "Nervous Music" "Philly Club Rap" "Political Hip Hop" "Pop Rap" "Ratchet" "Snap" "Trap" "Trap shaabi" "Turntablism" };
+        "Comedy Rap" -> "Chap Hop";
+        "Crunk" -> "Crunkcore";
+        "Detroit Sound" -> { "Flint Sound" "Philly Drill" };
+        "Experimental Hip Hop" -> "Industrial Hip Hop";
+        "Genge" -> "Gengetone";
+        "Hardcore Hip Hop" -> { "Britcore" "Gangsta Rap" "Horrorcore" "Memphis Rap" "Mid-School Hip Hop" "Trap Metal" };
+            "Gangsta Rap" -> { "Mafioso Rap" "Road Rap" "Scam Rap" };
+            "Memphis Rap" -> { "Dungeon Rap" "Phonk" };
+        "Hyphy" -> "Jerk Rap";
+        "Instrumental Hip Hop" -> "Rare Phonk";
+        "Jersey Club Rap" -> "Jersey Drill";
+        "Latin Rap" -> "Chicano Rap";
+        "Pop Rap" -> { "Bop" "Frat Rap" "Futuristic Swag" };
+        "Trap" -> { "Drill" "Futuristic Swag" "New Jazz" "No Melody" "Plugg" "Rage" "Rare Phonk" "Regalia" "Sigilkore" "Trap latino" "Trap Metal" "Trap Soul" "Tread" };
+            "Drill" -> { "Chicago Drill" "Free Car Music" "Jersey Drill" "New York Drill" "Philly Drill" "UK Drill" };
+                "Chicago Drill" -> "Bop";
+                "New York Drill" -> { "Sample Drill" "Sexy Drill" };
+            "Plugg" -> { "Ambient Plugg" "Dark Plugg" "PluggnB" };
+                "PluggnB" -> "Asian Rock";
 }
