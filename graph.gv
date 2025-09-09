@@ -57,10 +57,6 @@ digraph {
             "Romanticism" -> { "Grand opéra" "New German School" "Romantische Oper" };
             "Spanish Classical Music" -> { "Canto mozárabe" "Zarzuela" }
 
-
-
-
-
     # Country
     "Country" -> { "Alt-Country" "Bluegrass" "Contemporary Country" "Country & Irish" "Country Boogie" "Country Folk" "Country Pop" "Honky Tonk" "Nashville Sound" "Progressive Country" "Traditional Country" "Western" "Western Swing" };
         "Alt-Country" -> "Gothic Country";
@@ -73,9 +69,90 @@ digraph {
         "Nashville Sound" -> "Countrypolitan";
         "Progressive Country" -> "Outlaw Country";
         "Traditional Country" -> { "Close Harmony" "Country Gospel" "Country Yodeling" "Traditional Bluegrass" };
-        "Country Gospel" -> "Bluegrass Gospel";
+            "Country Gospel" -> "Bluegrass Gospel";
 
-    #todo: dance
+    # Dance
+    "Dance" -> { "Alternative Dance" "Dance-Pop" "Disco" "Electronic Dance Music" "Miami Bass" "Wa Euro" };
+        "Alternative Dance" -> { "Grebo" "New Rave" };
+        "Dance-Pop" -> { "Bubblegum Dance" "Disco polo" "Freestyle" "Funk melody" "Romanian Popcorn" "Tecnorumba" "Township Bubblegum" };
+            "Freestyle" -> "Latin Freestyle";
+        "Disco" -> { "Boogie" "Electro-Disco" "Euro-Disco" "Latin Disco" "Mutant Disco" "Nu-Disco" };
+            "Electro-Disco" -> { "Hi-NRG" "Italo-Disco" "Red Disco" "Space Disco" };
+                "Italo-Disco" -> "Spacesynth";
+                    "Spacesynth" -> "Doskpop";
+        "Electronic Dance Music" -> { "Artcore" "Balani Show" "Balearic Beat" "Bérite Club" "Breakbeat" "Broken Beat" "Bubblegum Bass" "Bubbling" "Budots" "Coupé-décalé" "Cruise" "Dariacore" "Deconstructed Club" "Dek Bass" "Digital Cumbia" "Drum and Bass" "Dubstep" "East Coast Club" "EBM" "Electro" "Electroclash" "Electro-Disco" "Electro latino" "Electro Swing" "Eurobeat" "Eurodance" "Flex Dance Music" "Footwork" "Freestyle" "Funk mandelão" "Funkot" "Future Bass" "Future Rave" "Ghettotech" "Glitch Hop [EDM]" "Grime" "Hardcore [EDM]" "Hard Dance" "Hard Drum" "Hardvapour" "Hardwave" "House" "Hypertechno" "Hyper Techno" "Jungle Terror" "Krushclub" "Kuduro" "Makina" "Manyao" "Melodic Bass" "Midtempo Bass" "Moombahcore" "Moombahton" "Nerdcore Techno" "Nu-Disco" "Ori deck" "Post-Dubstep" "Shangaan Electro" "Singeli" "Skweee" "Slimepunk" "Techno" "Techno Bass" "Tecnorumba" "Trance" "Trap [EDM]" "Tribal Guarachero" "UK Bass" "UK Funky" "UK Garage" "Wonky" };
+            "Breakbeat" -> { "Acid Breaks" "Baltimore Club" "Big Beat" "Breakbeat Hardcore" "Breakbeat Kota" "Florida Breaks" "Funky Breaks" "Nu Skool Breaks" "Progressive Breaks" "Psybreaks" "West Coast Breaks" };
+                "Breakbeat Hardcore" -> { "Darkside" "Hardcore Breaks" };
+                "Breakbeat Kota" -> "Jungle Dutch";
+            "Drum and Bass" -> { "Atmospheric Drum and Bass" "Dancefloor Drum and Bass" "Darkstep" "Drumfunk" "Drumstep" "Dubwise Drum and Bass" "Footwork Jungle" "Halftime" "Hardstep" "Jazzstep" "Jump-Up" "Jungle" "Liquid Drum and Bass" "Minimal Drum and Bass" "Neurofunk" "Techstep" "Trancestep"};
+                "Darkstep" -> { "Crossbreed" "Skullstep" };
+                "Jungle" -> "Ragga Jungle";
+                "Liquid Drum and Bass" -> "Sambass";
+                "Minimal Drum and Bass" -> { "Autonomic" "Microfunk" };
+            "Dubstep" -> { "Brostep" "Chillstep" "Dungeon Sound" "Melodic Dubstep" "Purple Sound" "Riddim" "Tearout" };
+                "Brostep" -> { "Briddim" "Colour Bass" "Deathstep" "Drumstep" "Tearout [Brostep]" };
+                    "Deathstep" -> "Minatory";
+                "Riddim" -> "Future Riddim";
+            "East Coast Club" -> { "Baltimore Club" "Jersey Club" "Philly Club" };
+            "EBM" -> { "Dark Electro" "Futurepop" "New Beat" };
+                "Dark Electro" -> "Aggrotech";
+                "New Beat" -> "Hard Beat";
+            "Eurobeat" -> "J-Euro";
+            "Eurodance" -> { "Bubblegum Dance" "Italo Dance" };
+            "Footwork" -> "Footwork Jungle";
+            "Funk mandelão" -> { "Beat bruxaria" "Brazilian Phonk" "Funk automotivo" "Ritmada" };
+            "Funkot" -> "Breakbeat Kota";
+            "Future Bass" -> "Kawaii Future Bass";
+                "Kawaii Future Bass" -> "Future Core";
+            "Glitch Hop [EDM]" -> { "Ghetto Funk" "Neurohop" };
+            "Grime" -> { "Neo-Grime" "Weightless" };
+            "Hardcore [EDM]" -> { "Acidcore" "Amigacore" "Belgian Techno" "Breakbeat Hardcore" "Breakcore" "Crossbreed" "Darkcore" "Deathchant Hardcore" "Digital Hardcore" "Doomcore" "Freeform Hardcore" "Frenchcore" "Gabber" "Happy Hardcore" "Hardtek" "Industrial Hardcore" "Speedcore" "Terrorcore" "Uptempo Hardcore" };
+                "Breakcore" -> { "Lolicore" "Mashcore" "Raggacore" };
+                "Gabber" -> "Nu Style Gabber";
+                "Happy Hardcore" -> { "Bouncy Techno" "UK Hardcore" };
+                    "UK Hardcore" -> { "Future Core" "Powerstomp" };
+                "Hardtek" -> "Raggatek";
+                "Speedcore" -> { "Extratone" "Splittercore" };
+            "Hard Dance" -> { "Hardstyle" "Hardtek" "Hard Trance" "Jumpstyle" "Lento violento" "NRG" "UK Hardcore" "UK Hard House" };
+                "Hardstyle" -> { "Dubstyle" "Euphoric Hardstyle" "Nustyle" "Psystyle" "Rawstyle" }
+                    "Rawstyle" -> "Rawphoric";
+                "UK Hard House" -> { "Scouse House" "Speed House" };
+                    "Scouse House" -> "Hardbass";
+            "House" -> { "Acid House" "Afro House" "Amapiano" "Ambient House" "Ballroom" "Baltimore Club" "Bass House" "Bassline" "Big Room House" "Brazilian Bass" "Bubbling House" "Changa tuki" "Chicago Hard House"  "Chicago House" "Deep House" "Diva House" "Electro House" "Eletrofunk" "Euro House" "Festival Progressive House" "French House" "Funky House" "Future Funk" "Future House" "Garage House" "Ghetto House" "G-House" "Gqom" "Hip House" "Italo House" "Jackin' House" "Kwaito" "Latin House" "Melodic House" "Microhouse" "Organic House" "Outsider House" "Phonk House" "Progressive House" "Romanian Popcorn" "Speed Garage" "Stutter House" "Tech House" "Tribal House" "Tropical House" "UK Hard House" "UK Jackin'" "Vinahouse" };
+                "Afro House" -> "3-Step";
+                "Amapiano" -> "Afropiano";
+                "Bass House" -> "Speed House";
+                "Brazilian Bass" -> { "Mega funk" "Slap House" };
+                "Chicago Hard House" -> "LA Hard House";
+                "Deep House" -> "Lo-Fi House";
+                "Diva House" -> "Hardbag";
+                "Electro House" -> { "Complextro" "Dutch House" "Fidget House" "French Electro" "Melbourne Bounce" };
+                    "Dutch House" -> "Noiadance";
+                "Euro House" -> "Hardbag";
+                "Future House" -> { "Future Bounce" "Slap House" };
+                "Garage House" -> { "Gospel House" "Jersey Sound" };
+                "Ghetto House" -> "Juke";
+                "Kwaito" -> "Bacardi";
+                "Outsider House" -> "Lo-Fi House";
+                "Tech House" -> { "Deep Tech" "Rominimal" };
+                "Tribal House" -> "Guaracha [EDM]";
+            "Kuduro" -> "Batida";
+            "Techno" -> { "Acid Techno" "Ambient Techno" "Belgian Techno" "Bleep Techno" "Detroit Techno" "Freetekno"  "Hardgroove Techno" "Hard Techno" "Industrial Techno" "Melodic Techno" "Minimal Techno" "Peak Time Techno" "Wonky Techno" };
+                "Hard Techno" -> "Schranz";
+                "Industrial Techno" -> "Birmingham Sound";
+                "Minimal Techno" -> "Dub Techno";
+            "Techno Bass" -> "Car Audio Bass";
+            "Trance" -> { "Acid Trance" "Big Room Trance" "Dream Trance" "Euro Trance" "Hard Trance" "Hi-Tech Full-On" "Ibiza Trance" "NRG" "Progressive Trance" "Psytrance" "Tech Trance" "Uplifting Trance" "Vocal Trance" };
+                "Euro Trance" -> "Hands Up";
+                    "Hands Up" -> "Buchiage Trance";
+                "Psytrance" -> { "Dark Psytrance" "Forest Psytrance" "Full-On Psytrance" "Goa Trance" "Progressive Psytrance" "Suomisaundi" };
+                    "Dark Psytrance" -> { "Hi-Tech Psytrance" "Psycore" };
+                    "Goa Trance" -> "Nitzhonot";
+                    "Progressive Psytrance" -> "Zenonesque";
+            "Trap [EDM]" -> { "Festival Trap" "Hard Trap" "Heaven Trap" "Hybrid Trap" "Twerk" };
+            "UK Garage" -> { "2-Step" "Bassline" "Breakstep" "Future Garage" "Speed Garage" };
+        "Miami Bass" -> { "Atlanta Bass" "Tamborzão" "Techno Bass"};
+        "Wa Euro" -> "J-Euro";
 
     # Easy Listening
     "Easy Listening" -> { "Cocktail Nation" "Exotica" "Light Music" "Lounge" "Pops Orchestra" "Space Age Pop" };
