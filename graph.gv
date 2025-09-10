@@ -382,7 +382,7 @@ digraph {
         "Latin Pop" -> { "Cumbia pop" "Tropipop" };
         "Nederpop" -> "Palingsound";
         "Pop Minang" -> "Talempong goyang";
-        "Pop Rock" -> { "Beat" "Big Music" "Britpop" "Jangle Pop" "Piano Rock" "Pop Yeh-Yeh" "Post-Britpop" "Power Pop" "Soft Rock" "Stereo" "Twee Pop" "Vocal Surf" }
+        "Pop Rock" -> { "Beat" "Big Music" "Britpop" "Jangle Pop" "Piano Rock" "Pop Yeh-Yeh" "Post-Britpop" "Power Pop" "Soft Rock" "Stereo" "Twee Pop" "Vocal Surf" };
             "Beat" -> { "Freakbeat" "Group Sounds" "Jovem Guarda" "Merseybeat" "Nederbeat" };
             "Jangle Pop" -> { "C86" "Dolewave" "Neo-Acoustic" "Paisley Underground" };
             "Soft Rock" -> { "Tropical Rock" "Yacht Rock" };
@@ -397,4 +397,41 @@ digraph {
         "Psychedelic Rock" -> { "Acid Rock" "Freakbeat" "Garage Psych" "Heavy Psych" "Raga Rock" "Space Rock" "Xian Psych" "Zamrock" };
             "Space Rock" -> "Space Rock Revival";
         "Psychploitation" -> "Sitarsploitation";
+
+    # Punk
+    "Punk" -> { "Art Punk" "Cowpunk" "Digital Hardcore" "Emo" "Folk Punk" "Hardcore [Punk]" "Mod Revival" "Pigfuck" "Post-Punk" "Proto-Punk" "Punk Blues" "Punk Rock" "Synth Punk" };
+        "Art Punk" -> "Egg Punk";
+        "Emo" -> { "Emocore" "Emo-pop" "Mall Screamo" "Midwest Emo" "Screamo" };
+            "Screamo" -> "Emoviolence";
+        "Folk Punk" -> { "Celtic Punk" "Gypsy Punk" };
+        "Hardcore [Punk]" -> { "Beatdown Hardcore" "Easycore" "Electronicore" "Grindcore" "Hardcore Punk" "Metalcore" "Nintendocore" "Noisecore" "Post-Hardcore" "Sass" };
+            "Hardcore Punk" -> { "Burning Spirits" "Crossover Thrash" "Crust Punk" "D-Beat" "Melodic Hardcore" "Mincecore" "Skacore" "Street Punk" "Thrashcore" };
+                "Crust Punk" -> { "Blackened Crust" "Neocrust" "Stenchcore" };
+                "Skacore" -> "Crack Rock Steady";
+                "Thrashcore" -> "Powerviolence";
+            "Post-Hardcore" -> { "Emocore" "Mall Screamo" "Screamo" "Swancore" };
+        "Post-Punk" -> { "Coldwave" "Dance-Punk" "Gothic Rock" "Post-Punk Revival" };
+            "Dance-Punk" -> "Dance-Punk Revival";
+            "Gothic Rock" -> { "Deathrock" "Positive Punk" };
+            "Post-Punk Revival" -> "Dance-Punk Revival";
+        "Punk Rock" -> { "Anarcho-Punk" "Celtic Punk" "Deathrock" "Deutschpunk" "Egg Punk" "Garage Punk" "Glam Punk" "Hardcore Punk" "Horror Punk" "Könsrock" "Oi!" "Pop Punk" "Positive Punk" "Psychobilly" "Ska Punk" "Skate Punk" "Surf Punk" "Vikingarock" };
+            "Pop Punk" -> { "Easycore" "Seishun Punk" };
+            "Ska Punk" -> "Skacore";
+    
+    # R&B
+    "R&B" -> { "Acid Jazz" "Beach Music" "Blue-Eyed Soul" "Boogie" "Contemporary R&B" "Doo-Wop" "Funk" "New Orleans R&B" "Rhythm & Blues" "Soul" "Soul Blues" };
+        "Contemporary R&B" -> { "Alternative R&B" "Hip Hop Soul" "New Jack Swing" "Trap Soul" "UK Street Soul" };
+        "Funk" -> { "Afro-Funk" "Britfunk" "Deep Funk" "Go-Go" "Jazz-Funk" "Latin Funk" "P-Funk" "Porn Groove" "Synth Funk" };
+            "Go-Go" -> "Bounce Beat";
+            "Synth Funk" -> "Minneapolis Sound";
+        "Rhythm & Blues" -> { "British Rhythm & Blues" "Swamp Pop" "Twist" "West Side Sound" };
+        "Soul" -> { "Chicago Soul" "Country Soul" "Deep Soul" "Latin Soul" "Neo-Soul" "Philly Soul" "Pop Soul" "Progressive Soul" "Psychedelic Soul" "Smooth Soul" "Southern Soul" };
+
+    # Reggae / Ska / Dancehall
+    "Reggae / Ska / Dancehall" -> { "Dancehall" "Reggae" "Rocksteady" "Ska" };
+        "Dancehall" -> { "Bubbling" "Digital Dancehall" "Flex Dance Music" "Gommance" "Ragga" "Shatta" "Zess" };
+        "Reggae" -> { "Deejay" "Digital Dancehall" "Dub" "Lovers Rock" "Pacific Reggae" "Pop Reggae" "Roots Reggae" "Seggae" "Skinhead Reggae" };
+            "Roots Reggae" -> "Dub Poetry";
+        "Ska" -> { "2 Tone" "Jamaican Ska" "New Tone" "Spouge" "Third Wave Ska" };
+            "Third Wave Ska" -> "Ska Punk";
 }
