@@ -245,7 +245,6 @@ digraph {
                 "Catalan Folk Music" -> { "Sardana" "Valencian Folk Music" };
                 "Celtic Folk Music" -> { "Breton Celtic Folk Music" "Cape Breton Folk Music" "Cornish Folk Music" "Irish Folk Music" "Manx Folk Music" "Scottish Folk Music" "Welsh Folk Music" };
                     "Breton Celtic Folk Music" -> "Bagad";
-                    "Cape Breton Folk Music" -> "Cape Breton Fiddling";
                     "Irish Folk Music" -> "Sean-nós";
                     "Scottish Folk Music" -> { "Òrain Ghàidhlig" "Pìobaireachd" "Pipe Band" "Scots Song" "Scottish Country Dance Music" "Shetland & Orkney Folk Music" };
                         "Òrain Ghàidhlig" -> { "Òrain luaidh" "Seinn nan salm" };
@@ -324,4 +323,78 @@ digraph {
         "Post-Industrial" -> { "Dark Ambient" "Deconstructed Club" "EBM" "Electro-Industrial" "Industrial Hardcore" "Industrial Hip Hop" "Industrial Metal" "Industrial Rock" "Industrial Techno" "Martial Industrial" "Power Noise" };
             "Electro-Industrial" -> "Dark Electro";
             "Industrial Metal" -> { "Cyber Metal" "Neue Deutsche Härte" };
+            
+    # Jazz
+    "Jazz" -> { "Afro-Jazz" "Arabic Jazz" "Avant-Garde Jazz" "Bebop" "Big Band" "British Dance Band" "Bulawayo Jazz" "Cape Jazz" "Cartoon Music" "Chamber Jazz" "Cool Jazz" "Crime Jazz" "Dark Jazz" "Dixieland" "ECM Style Jazz" "Ethio-Jazz" "Flamenco Jazz" "Hard Bop" "Indo Jazz" "Jazz-Funk" "Jazz Fusion" "Jazz manouche" "Jazz Poetry" "Kréyol djaz" "Latin Jazz"  "Marabi" "Modal Jazz" "Post-Bop" "Smooth Jazz" "Soul Jazz" "Spiritual Jazz" "Spy Music" "Stride" "Swing" "Third Stream" "Vocal Jazz" };
+        "Avant-Garde Jazz" -> { "Experimental Big Band" "Free Jazz" };
+            "Free Jazz" -> "European Free Jazz";
+        "Big Band" -> { "Experimental Big Band" "Progressive Big Band" };
+        "Latin Jazz" -> { "Afro-Cuban Jazz" "Samba-jazz" };
+        "Marabi" -> { "Kwela" "Mbaqanga" };
+        "Modal Jazz" -> "Jazz Mugham";
+        "Swing" -> "Swing Revival";
+        "Vocal Jazz" -> "Vocalese";
+
+    # Metal
+    "Metal" -> { "Alternative Metal" "Avant-Garde Metal" "Black Metal" "Death Metal" "Djent" "Doom Metal" "Drone Metal" "Folk Metal" "Gothic Metal" "Grindcore" "Groove Metal" "Heavy Metal" "Industrial Metal" "Kawaii Metal" "Metalcore" "Neoclassical Metal" "Post-Metal" "Power Metal" "Progressive Metal" "Sludge Metal" "Southern Metal" "Stenchcore" "Stoner Metal" "Symphonic Metal" "Thrash Metal" "Trance Metal" "Viking Metal" };
+        "Alternative Metal" -> { "Funk Metal" "Neue Deutsche Härte" "Nu Metal" "Rap Metal" };
+        "Black Metal" -> { "Atmospheric Black Metal" "Black 'n' Roll" "Black Noise" "Dissonant Black Metal" "DSBM" "Hellenic Black Metal" "Melodic Black Metal" "Pagan Black Metal" "Symphonic Black Metal" "War Metal" };
+            "Atmospheric Black Metal" -> "Blackgaze";
+        "Death Metal" -> { "Brutal Death Metal" "Death 'n' Roll" "Deathgrind" "Melodic Death Metal" "Technical Death Metal" };
+            "Brutal Death Metal" -> "Slam Death Metal";
+            "Technical Death Metal" -> "Dissonant Death Metal";
+        "Djent" -> "Thall";
+        "Doom Metal" -> { "Death Doom Metal" "Funeral Doom Metal" "Traditional Doom Metal" };
+            "Traditional Doom Metal" -> "Epic Doom Metal";
+        "Folk Metal" -> { "Celtic Metal" "Mittelalter-Metal" };
+        "Grindcore" -> { "Cybergrind" "Deathgrind" "Goregrind" "Mincecore" "Noisegrind" };
+            "Goregrind" -> { "Gorenoise" "Pornogrind" };
+        "Heavy Metal" -> { "Speed Metal" "US Power Metal" };
+        "Metalcore" -> { "Deathcore" "Mathcore" "Melodic Metalcore" "Thall" };
+            "Deathcore" -> "Downtempo Deathcore";
+        "Post-Metal" -> { "Atmospheric Sludge Metal" "Blackgaze" "Doomgaze" };
+        "Sludge Metal" -> "Atmospheric Sludge Metal";
+        "Thrash Metal" -> { "Crossover Thrash" "Technical Thrash Metal" };
+    
+    # Musical Theatre and Entertainment
+    "Musical Theatre and Entertainment" -> { "Ballad Opera" "Cabaret" "Comédie-ballet" "Cuplé" "Dutch Cabaret" "Kabarett" "Kanto" "Minstrelsy" "Murga" "Music Hall" "Operetta" "Revue" "Rock Musical" "Show Tunes" "Siffleur" "Singspiel" "Vaudeville" };
+        "Murga" -> "Murga uruguaya";
+        "Vaudeville" -> "Vaudeville Blues";
+    
+    # New Age
+    "New Age" -> { "Andean New Age" "Celtic New Age" "Native American New Age" "Neoclassical New Age" "New Age Kirtan" "Tibetan New Age" };
+
+    # Pop
+    "Pop" -> { "Adult Contemporary" "Afrobeats" "Alt-Pop" "Arabic Pop" "Art Pop" "Balkan Pop-Folk" "Baroque Pop" "Bitpop" "Blue-Eyed Soul" "Boy Band" "Brega calypso" "Brill Building" "Bubblegum" "Cambodian Pop" "Canción melódica" "Bolero-Beat" "Música cebolla" "City Pop" "Classical Crossover" "Country Pop" "Dance-Pop" "Dangdut" "Dansbandsmusik" "Dansktop" "Electro Hop" "Electropop" "Europop" "Flamenco Pop" "Folk Pop" "French Pop" "Girl Group" "Hmong Pop" "Hyperpop" "Indian Pop" "Indie Pop" "Irish Showband" "Italo Pop" "Jazz Pop" "J-Pop" "Kayōkyoku" "Korean Ballad" "K-Pop" "Latin Pop" "Lokal musik" "Mulatós" "Nederpop" "New Music" "OPM" "Orthodox Pop" "Persian Pop" "Pop Batak" "Pop Ghazal" "Pop Minang" "Pop Raï" "Pop Reggae" "Pop Rock" "Pop Soul" "Pop Sunda" "P-Pop" "Progressive Pop" "Psychedelic Pop" "Rabiz" "Rigsar" "Rumba catalana" "Russian Chanson" "Schlager" "Sertanejo romântico" "Sertanejo universitário" "Sophisti-Pop" "Soviet Estrada" "Sunshine Pop" "Synthpop" "Teen Pop" "Toytown Pop" "T-Pop" "Traditional Pop" "Turkish Pop" "Vocal Trance" "Yé-yé" };
+        "Afrobeats" -> { "Afropiano" "Alté" };
+        "Arabic Pop" -> { "Al jeel" "Mūsīqā lubnāniyya" };
+        "Balkan Pop-Folk" -> { "Chalga" "Manele" "Modern Laika" "Musika popullore" "Muzică de mahala" "Skiladika" "Tallava" "Turbo-Folk" };
+        "Cambodian Pop" -> "Rom kbach";
+        "Dangdut" -> "Dangdut koplo";
+        "Indian Pop" -> "Bhojpuri Pop";
+        "Indie Pop" -> { "Bedroom Pop" "C86" "Chamber Pop" "Neo-Acoustic" "Tontipop" "Twee Pop" };
+            "Twee Pop" -> "Cuddlecore";
+        "Italo Pop" -> "Canzone neomelodica";
+        "J-Pop" -> { "Akishibu-kei" "Denpa" "Wa Euro" "Yakousei" };
+        "Kayōkyoku" -> { "Idol kayō" "Mood kayō" "Techno kayō" };
+        "Korean Ballad" -> "Oriental Ballad";
+        "K-Pop" -> "Semi-Trot";
+        "Latin Pop" -> { "Cumbia pop" "Tropipop" };
+        "Nederpop" -> "Palingsound";
+        "Pop Minang" -> "Talempong goyang";
+        "Pop Rock" -> { "Beat" "Big Music" "Britpop" "Jangle Pop" "Piano Rock" "Pop Yeh-Yeh" "Post-Britpop" "Power Pop" "Soft Rock" "Stereo" "Twee Pop" "Vocal Surf" }
+            "Beat" -> { "Freakbeat" "Group Sounds" "Jovem Guarda" "Merseybeat" "Nederbeat" };
+            "Jangle Pop" -> { "C86" "Dolewave" "Neo-Acoustic" "Paisley Underground" };
+            "Soft Rock" -> { "Tropical Rock" "Yacht Rock" };
+        "Pop Soul" -> "Motown Sound";
+        "Schlager" -> { "Humppa" "Levenslied" "Volkstümliche Musik" };
+        "Sertanejo universitário" -> { "Arrocha sertanejo" "Funknejo" };
+        "Traditional Pop" -> { "British Dance Band" "Mood kayō" "Romanţe" "Standards" "Tin Pan Alley" };
+    
+    # Psychedelia
+    "Psychedelia" -> { "Neo-Psychedelia" "Psychedelic Folk" "Psychedelic Pop" "Psychedelic Rock" "Psychedelic Soul" "Psychploitation" "Stoner Metal" "Stoner Rock" "Tropicália" };
+        "Neo-Psychedelia" -> { "Baggy" "Dream Pop" "Hypnagogic Pop" "Paisley Underground" "Space Rock Revival" };
+        "Psychedelic Rock" -> { "Acid Rock" "Freakbeat" "Garage Psych" "Heavy Psych" "Raga Rock" "Space Rock" "Xian Psych" "Zamrock" };
+            "Space Rock" -> "Space Rock Revival";
+        "Psychploitation" -> "Sitarsploitation";
 }
