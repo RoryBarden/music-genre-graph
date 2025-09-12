@@ -561,7 +561,8 @@ digraph {
                 "Greenlandic Music" -> { "Kalattut" "Tivaner inngernerlu" "Uaajeerneq" "Vaigat" };
             "Polish Music" -> { "Disco polo" "Mazur" "Mazurka" "Miejski folk" "Poezja śpiewana" "Polish Folk Music" "Polonaise" };
             "Romanian Music" -> { "Manele" "Muzică de mahala" "Romanian Etno Music" "Romanian Folk Music" "Romanţe" };
-            "Russian Music" -> { "Avtorskaya pesnya" "Bard Rock" "Russian Chanson" "Russian Folk Music" "Russian Orthodox Liturgical Music" "Russian Romance" };
+            "Russian Music" -> { "Avtorskaya pesnya" "Russian Chanson" "Russian Folk Music" "Russian Orthodox Liturgical Music" "Russian Romance" };
+                "Avtorskaya pesnya" -> "Bard Rock";
             "Waltz" -> { "Valsa brasileira" "Vals venezolano" };
         "Hispanic Music" -> { "Canción melódica" "Hispanic American Music" "Murga" "Philippine Rondalla" "Romance" "Spanish Music" };
             "Hispanic American Music" -> { "Argentine Music" "Avanzada" "Bachata" "Bailecito" "Bolero" "Boogaloo" "Bullerengue" "Caporal" "Carnaval cruceño" "Champeta" "Chilean Music" "Chuntunqui romántico" "Conjunto andino" "Cuban Music" "Cumbia" "Currulao" "Dembow" "Gaita zuliana" "Guarania" "Hispanic American Folk Music" "Huayno" "Latin Alternative" "Latin American Classical Music" "Latin Disco" "Latin Electronic" "Latin Funk" "Latin Pop" "Latin Rock" "Latin Soul" "Merengue" "Mexican Music" "New Mexico Music" "Nueva canción latinoamericana" "Onda nueva" "Pasillo" "Peruvian Music" "Polka paraguaya" "Porro" "Reggaetón" "Rhumba" "Rioplatense Music" "Rock andino" "Salsa" "Tamborera" "Tropicanibalismo" "Vallenato" "Vals venezolano" "Xuc" };
@@ -644,4 +645,59 @@ digraph {
                     "Música gaúcha" -> "Vanera";
         "Sufi Music" -> { "Banga" "Kafi" "Manzuma" "Qawwali" "Rapai dabõih" "Sufiana kalam" "Sufi Rock" "Turkish Mevlevi Music" };
         "Turkic-Mongolic Music" -> { "Altai Music" "Bashkir Folk Music" "Central Asian Throat Singing" "Karakalpak Traditional Music" "Khakas Traditional Music" "Kyrgyz Traditional Music" "Mongolian Music" "Sakha Traditional Music" };
+    
+    # Rock
+    "Rock" -> { "Acoustic Rock" "Afro-Rock" "Alternative Rock" "Anatolian Rock" "AOR" "Art Punk" "Art Rock" "Bard Rock" "Blues Rock" "British Rhythm & Blues" "Candombe beat" "Christian Rock" "Comedy Rock" "Country Rock" "Cowpunk" "Deutschrock" "Emo" "Experimental Rock" "Folk Rock" "Funk Rock" "Garage Rock" "Glam Rock" "Hardcore [Punk]" "Hard Rock" "Heartland Rock" "Industrial Rock" "Jam Band" "Jazz-Rock" "Jersey Shore Sound" "Latin Rock" "Manguebeat" "Math Rock" "Metal" "Miejski folk" "New Wave" "Noise Rock" "Pop Rock" "Post-Punk" "Post-Rock" "Progressive Rock" "Proto-Punk" "Psychedelic Rock" "Pub Rock" "Punk Blues" "Punk Rock" "Rap Rock" "Reggae Rock" "Rock & Roll" "Rock andaluz" "Rock andino" "Rock Musical" "Rock Opera" "Roots Rock" "Southern Rock" "Sufi Rock" "Surf Music" "Symphonic Rock" "Tolai Rock" "Zolo" };
+        "Alternative Rock" -> { "Alternative Dance" "Baggy" "Britpop" "Dream Pop" "Emo-Pop" "Geek Rock" "Grunge" "Indie Rock" "Jangle Pop" "Mall Screamo" "Post-Britpop" "Post-Grunge" "Shimokita-kei" "Shoegaze" };
+            "Indie Rock" -> { "C86" "Dolewave" "Dunedin Sound" "Garage Rock Revival" "Indie Surf" "Math Pop" "Midwest Emo" "New Rave" "Noise Pop" "Post-Punk Revival" "Slacker Rock" "Slowcore" "Twee Pop" };
+                "Slacker Rock" -> "Shitgaze";
+        "Blues Rock" -> "Boogie Rock";
+        "Christian Rock" -> "Xian Psych";
+        "Experimental Rock" -> { "Avant-Prog" "Krautrock" };
+            "Avant-Prog" -> { "Brutal Prog" "Zeuhl" };
+        "Folk Rock" -> { "Alpenrock" "British Folk Rock" "Celtic Rock" "Mittelalter-Rock" "Nordic Folk Rock" "Phleng phuea chiwit" "Pinoy Folk Rock" "Rock rural" };
+        "Funk Rock" -> "Funk Metal";
+        "Garage Rock" -> { "Frat Rock" "Freakbeat" "Garage Psych" "Garage Punk" "Garage Rock Revival" };
+        "Glam Rock" -> "Glam Punk";
+        "Hard Rock" -> { "Glam Metal" "Heavy Psych" "Occult Rock" "Stoner Rock" };
+            "Glam Metal" -> "Sleaze Rock";
+        "Jam Band" -> { "Jamgrass" "Livetronica" };
+        "Math Rock" -> "Math Pop";
+        "New Wave" -> { "2 Tone" "Mod Revival" };
+        "Noise Rock" -> { "Pigfuck" "Shitgaze" };
+        "Progressive Rock" -> { "Avant-Prog" "Canterbury Scene" "Neo-Prog" "Symphonic Prog" };
+            "Avant-Prog" -> { "Brutal Prog" "Zeuhl" };
+            "Canterbury Scene" -> "Neo-Canterbury";
+        "Rap Rock" -> "Rap Metal";
+        "Rock & Roll" -> { "Indorock" "Rockabilly" "Twist" };
+            "Rockabilly" -> "Psychobilly";
+        "Surf Music" -> { "Indie Surf" "Surf Punk" "Surf Rock" "Vocal Surf" };
+            "Surf Rock" -> { "Eleki" "Rautalanka" "Wong shadow" };
+    
+    # Scenes & Movements
+    "Scenes & Movements" -> { "Afrofuturism" "Alté" "Anarcho-Punk" "Asian Underground" "Aussie Pub Rock" "Beach Music" "Bérite Club" "Bloghouse" "Bosstown Sound" "Bristol Sound" "Britpop" "Brno Alternative Scene" "Brony Music" "Burger-Highlife" "Campus Folk" "Canterbury Scene" "Cascadian Black Metal" "CBGB Scene" "CCM" "Česká alternativní scéna" "Český underground" "Chicago School" "Christian Hardcore" "Clube da esquina" "Cocktail Nation" "C-Pop" "Dariacore" "Dek Bass" "Demoscene" "Deutschrock" "Dolewave" "Donosti Sound" "Doujin Music" "Dunedin Sound" "Düsseldorf School" "East Coast Hip Hop" "Emo Revival" "English Underground" "Epadunk" "Filk" "Florida Fast Music" "Fort Thunder Scene" "Franco-Flemish School" "Free Noise" "French Hip Hop" "Futurism" "Gothenburg Sound" "Grebo" "Greenwich Village Scene" "Group Sounds" "Hamburger Schule" "Harlem Renaissance" "Hauntology" "Hellenic Black Metal" "Hipco" "Hip-hopolo" "Hoboken Sound" "Holy Terror" "Japanese Hardcore" "Japanese Hip Hop" "Japanese Idol" "J-core" "Jersey Shore Sound" "Jovem Guarda" "J-Pop" "Kansai No Wave" "Kawaii Metal" "K-Pop" "LA Beat Scene" "Laurel Canyon Scene" "Leningrad Rock Club Scene" "Little Band Scene" "Loft Jazz" "Louisville Sound" "Madchester" "Maidcore" "Manguebeat" "Manila Sound" "Merseybeat" "Minneapolis Sound" "Młoda Polska" "Mod" "Motswako" "Movida madrileña" "Nederbeat" "Nerdcore Hip Hop" "Nerdcore Techno" "Neue Deutsche Welle" "Neue Volksmusik" "New Brunswick Basement Scene" "New London Jazz" "New Music" "New Orleans Blues" "New Partisans" "New Primitivism" "New Romantic" "New Tone" "New Weird America" "New Weird Finland" "New York Hardcore" "NOLA Sludge" "Northern Soul" "Nova srpska scena" "Nova vanguarda paulistana" "Novaya scena" "Novo Dub" "No Wave" "Nueva canción" "Nueva ola" "NWOBHM" "Onkyo" "OPM" "Palm Desert Scene" "Pop Kreatif" "Pop Yeh-Yeh" "Positive Punk" "P-Pop" "Progg" "Psichedelia occulta italiana" "Psychploitation" "Q-Pop"  "Queercore" "RABM" "Red Dirt" "Revolution Summer" "Riot Grrrl" "Road Rap" "Rock barrial" "Rock in Opposition" "Rock radical vasco" "Rock sónico" "Rock subterráneo" "Rock urbano español" "Rock urbano mexicano" "Romanticism" "Russemusikk" "San Francisco Sound" "Scottish Folk Revival" "Seapunk" "Second British Folk Revival" "Shibuya-kei" "Shimokita-kei" "Siberian Punk" "SoundClown" "Southern Hip Hop" "Sovietwave" "Straight Edge" "Swing Revival" "Teutonic Thrash Metal" "Texas Psychedelia Scene" "The Wave" "Tontipop" "T-Pop" "Tropicália" "Tropicanibalismo" "Udigrudi" "UK82" "UK Hip Hop" "Ultra" "Urban Grooves" "Vanguarda paulista" "Vietnamese New Wave" "Visual kei" "Vixa" "Vocaloid Scene" "Voëlvry Movement" "V-Pop" "West Coast Hip Hop" "West Side Sound" "Windmill Scene" "Wizard Rock" "Women's Music Movement" "Yass" "YTPMV" "Yugoslav New Wave" "Zamrock" "Zimdancehall" };
+        "CCM" -> { "Praise & Worship" "Urban Contemporary Gospel" };
+            "Praise & Worship" -> "Praise Break";
+        "C-Pop" -> { "Cantopop" "Gufeng" "Hokkien Pop" "Mandopop" "Zhongguo feng" };
+        "Doujin Music" -> "Touhou Music";
+        "East Coast Hip Hop" -> "Brooklyn Drill";
+        "English Underground" -> "Ladbroke Grove Scene";
+        "Japanese Idol" -> "Alternative Idol";
+        "J-core" -> "Future Core";
+        "Mod" -> "Mod Revival";
+        "Nueva canción" -> { "Nueva canción española" "Nueva canción latinoamericana" };
+        "Shibuya-kei"-> { "Akishibu-kei" "Picopop" };
+        "Southern Hip Hop" -> "South Florida SoundCloud Rap";
+        "Straight Edge" -> { "Krishnacore" "Vegan Straight Edge" };
+            "Vegan Straight Edge" -> { "H8000" "Hardline" };
+        "Visual kei" -> { "Kote kei" "Nagoya kei" "Soft Visual" };
+        "YTPMV" -> "OtoMAD";
+
+    # Singer-Songwriter
+    "Singer-Songwriter" -> { "Avtorskaya pesnya" "Canzone d'autore" "Chanson à texte" "Euskal kantagintza berria" "Kleinkunst" "Liedermacher" "Música de intervenção" "Nova cançó" "Nòva cançon" "Poezja śpiewana" };
+
+    # Spoken Word
+    "Spoken Word" -> { "Fairy Tales" "Folktales" "Guided Meditation" "Interview" "Lectures" "Poetry" "Radio Drama" "Speeches" "Stand-Up Comedy" };
+        "Poetry" -> { "Beat Poetry" "Cowboy Poetry" "Dub Poetry" "Jazz Poetry" "Slam Poetry" "Sound Poetry" };
+        "Speeches" -> "Sermons";
     }
