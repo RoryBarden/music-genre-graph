@@ -636,7 +636,6 @@ digraph {
                     "Lambada" -> "Guitarrada";
                 "Samba" -> { "Batucada" "Bossa nova" "Marchinha" "Pagode" "Partido alto" "Samba-canção" "Samba-choro" "Samba de breque" "Samba de gafieira" "Samba de roda" "Samba de terreiro" "Samba-enredo" "Samba-exaltação" "Samba-jazz" "Samba-joia" "Sambalanço" "Samba-rock" };
                     "Pagode" -> { "Pagodão" "Pagode romântico" };
-                        "Pagodão" -> "Arrochadeira";
                     "Samba-rock" -> "Samba Soul";
                 "Sertanejo" -> { "Rasqueado" "Sertanejo de raiz" "Sertanejo romântico" "Sertanejo universitário" };
                 "Southeastern Brazilian Music" -> { "Choro" "Jongo" "Marchinha" "Maxixe" "Pagode" "Partido alto" "Samba de breque" "Samba de gafieira" "Samba de terreiro" "Samba-enredo" "Tamborzão" };
