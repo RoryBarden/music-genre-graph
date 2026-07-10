@@ -30,7 +30,7 @@ digraph {
                 "Javanese Gamelan" -> { "Gamelan sekaten" "Solonese Gamelan" };
             "Malay Classical Music" -> "Malay Gamelan";
             "Thai Classical Music" -> { "Fon leb" "Khrueang sai" "Piphat" };
-        "Western Classical Music" -> { "Art Song" "Bagatelle" "Ballet" "Baroque Music" "Baroque Suite" "Brazilian Classical Music" "Byzantine Music" "Cantata" "Canzona" "Capriccio" "Chamber Music" "Character Piece" "Choral" "Cinematic Classical" "Classical Period" "Divertissement" "English Pastoral School" "Étude" "Fantasia" "Fugue" "Impromptu" "Latin American Classical Music" "Light Music" "Madrigal" "Medieval Classical Music" "Modern Classical" "Motet" "Neoclassicism" "Nocturne" "Opera" "Oratorio" "Orchestral Music" "Overture" "Passion" "Prelude" "Renaissance Music" "Ricercar" "Romanticism" "Serenade" "Sonata" "Spanish Classical Music" "Theme and Variation" "Toccata" };
+        "Western Classical Music" -> { "Art Song" "Bagatelle" "Ballet" "Baroque Music" "Baroque Suite" "Brazilian Classical Music" "Byzantine Music" "Cantata" "Canzona" "Capriccio" "Chamber Music" "Character Piece" "Choral" "Cinematic Classical" "Classic Ragtime" "Classical Period" "Concerto" "Divertissement" "English Pastoral School" "Étude" "Fantasia" "Fugue" "Impromptu" "Latin American Classical Music" "Light Music" "Madrigal" "Medieval Classical Music" "Modern Classical" "Motet" "Neoclassicism" "Nocturne" "Opera" "Oratorio" "Orchestral Music" "Overture" "Passion" "Prelude" "Renaissance Music" "Ricercar" "Roman School" "Romanticism" "Serenade" "Sonata" "Spanish Classical Music" "Theme and Variation" "Toccata" };
             "Art Song" -> { "Elizabethan Song" "Lied" "Mélodie" "Orchestral Song" };
             "Ballet" -> { "Ballet de cour" "Comédie-ballet" "Opéra-ballet" };
             "Baroque Music" -> { "Ballet de cour" "Comédie-ballet" "Opéra-ballet" "Zarzuela barroca" };
@@ -40,6 +40,7 @@ digraph {
             "Choral" -> { "Choral Concerto" "Choral Symphony" "Mass" };
                 "Mass" -> "Requiem";
             "Cinematic Classical" -> { "Epic Music" "Spaghetti Western" };
+            "Concerto" -> { "Concerto for Orchestra" "Concerto grosso" "Sinfonia concertante" };
             "Medieval Classical Music" -> { "Ars antiqua" "Ars nova" "Ars subtilior" "Contenance angloise" "Medieval Lyric Poetry" "Plainsong" };
                 "Plainsong" -> { "Ambrosian Chant" "Canto beneventano" "Canto mozárabe" "Celtic Chant" "Gallican Chant" "Gregorian Chant" "Old Roman Chant" };
                     "Gregorian Chant" -> "Sarum Chant";
@@ -50,12 +51,12 @@ digraph {
             "Opera" -> { "Ballad Opera" "Grand opéra" "Monodrama" "Opéra-ballet" "Opera buffa" "Opéra-comique" "Opera semiseria" "Opera seria" "Operetta" "Romantische Oper" "Singspiel" "Tragédie en musique" "Verismo" "Zarzuela" "Zeitoper" };
                 "Operetta" -> "Kalon'ny fahiny";
                 "Zarzuela" -> { "Género chico" "Zarzuela barroca" "Zarzuela grande" };
-            "Orchestral Music" -> { "Concert Band" "Concerto" "Orchestral Song" "Symphonic Mugham" "Symphony" "Tone Poem" };
-                "Concerto" -> { "Concerto for Orchestra" "Concerto grosso" "Sinfonia concertante" };
+            "Orchestral Music" -> { "Orchestral Song" "Symphonic Mugham" "Symphony" "Tone Poem" };
                 "Symphony" -> { "Choral Symphony" "Sinfonia concertante" };
             "Renaissance Music" -> { "Contenance angloise" "Elizabethan Song" "Franco-Flemish School" };
-            "Romanticism" -> { "Grand opéra" "New German School" "Romantische Oper" };
+            "Romanticism" -> { "Grand opéra" "New German School" "Romantische Oper" "Saint Petersburg School" };
             "Spanish Classical Music" -> { "Canto mozárabe" "Zarzuela" }
+    
 
     # Country
     "Country" -> { "Alt-Country" "Bluegrass" "Contemporary Country" "Country & Irish" "Country Boogie" "Country Folk" "Country Pop" "Honky Tonk" "Nashville Sound" "Progressive Country" "Traditional Country" "Western" "Western Swing" };
@@ -84,7 +85,7 @@ digraph {
             "Breakbeat" -> { "Acid Breaks" "Baltimore Club" "Big Beat" "Breakbeat Hardcore" "Breakbeat Kota" "Florida Breaks" "Funky Breaks" "Nu Skool Breaks" "Progressive Breaks" "Psybreaks" "West Coast Breaks" };
                 "Breakbeat Hardcore" -> { "Darkside" "Hardcore Breaks" };
                 "Breakbeat Kota" -> "Jungle Dutch";
-            "Drum and Bass" -> { "Atmospheric Drum and Bass" "Dancefloor Drum and Bass" "Darkstep" "Drumfunk" "Drumstep" "Dubwise Drum and Bass" "Footwork Jungle" "Halftime" "Hardstep" "Jazzstep" "Jump-Up" "Jungle" "Liquid Drum and Bass" "Minimal Drum and Bass" "Neurofunk" "Techstep" "Trancestep"};
+            "Drum and Bass" -> { "Atmospheric Drum and Bass" "Dancefloor Drum and Bass" "Darkstep" "Drumfunk" "Drumstep" "Dubwise Drum and Bass" "Footwork Jungle" "Halftime" "Hardstep" "Jazzstep" "Jump-Up" "Jungle" "Liquid Drum and Bass" "Minimal Drum and Bass" "Neurofunk" "Technoid" "Techstep" "Trancestep"};
                 "Darkstep" -> { "Crossbreed" "Skullstep" };
                 "Jungle" -> "Ragga Jungle";
                 "Liquid Drum and Bass" -> "Sambass";
@@ -92,7 +93,7 @@ digraph {
             "Dubstep" -> { "Brostep" "Chillstep" "Dungeon Sound" "Melodic Dubstep" "Purple Sound" "Riddim" "Tearout" };
                 "Brostep" -> { "Briddim" "Colour Bass" "Deathstep" "Drumstep" "Tearout [Brostep]" };
                     "Deathstep" -> "Minatory";
-                "Riddim" -> "Future Riddim";
+                "Riddim" -> { "Future Riddim" "Liquid Riddim" };
             "East Coast Club" -> { "Baltimore Club" "Jersey Club" "Philly Club" };
             "EBM" -> { "Dark Electro" "Futurepop" "New Beat" };
                 "Dark Electro" -> "Aggrotech";
@@ -201,7 +202,7 @@ digraph {
             "Indie Folk" -> "Stomp and Holler";
             "Neofolk" -> "Dark Folk";
             "Psychedelic Folk" -> { "Freak Folk" "Free Folk" "Udigrudi" "Wyrd Folk" };
-        "Traditional Folk Music" -> { "African Folk Music" "American Folk Music" "Arabic Folk Music" "Australian Folk Music" "Bayawan" "Brazilian Folk Music" "Buryat Folk Music" "Canadian Folk Music" "Caribbean Folk Music" "Caucasian Folk Music" "Chukchi Folk Music" "East Asian Folk Music" "European Folk Music" "Football Chant" "Hazara Folk Music" "Hispanic American Folk Music" "Indigenous American Traditional Music" "Indigenous Australian Traditional Music" "Ladino Folksong" "Ob-Ugric Folk Music" "Payada" "Romani Folk Music" "Samoyedic Folk Music" "South Asian Folk Music" "Southeast Asian Folk Music" "West Asian Folk Music" "Work Song" "Yodeling" };
+        "Traditional Folk Music" -> { "African Folk Music" "American Folk Music" "Arabic Folk Music" "Australian Folk Music" "Bayawan" "Brazilian Folk Music" "Canadian Folk Music" "Caribbean Folk Music" "Caucasian Folk Music" "Chukchi Folk Music" "East Asian Folk Music" "European Folk Music" "Football Chant" "Hazara Folk Music" "Hispanic American Folk Music" "Indigenous American Traditional Music" "Indigenous Australian Traditional Music" "Industrial Folk Song" "Ladino Folksong" "Ob-Ugric Folk Music" "Payada" "Romani Folk Music" "Samoyedic Folk Music" "South Asian Folk Music" "Southeast Asian Folk Music" "West Asian Folk Music" "Work Song" "Yodeling" };
             "African Folk Music" -> { "Ambasse bey" "Apala" "Batuque" "Dagomba Music" "Gnawa" "Kabye Folk Music" "Kilapanga" "Malagasy Folk Music" "Mbenga-Mbuti Music" "Moutya" "Ngoma" "Southern African Folk Music" "Tchinkoumé" "Traditional Maloya" "Traditional Séga" "Zinli" };
                 "Ngoma" -> "Unyago";
                 "Southern African Folk Music" -> { "Afrikaner Folk Music" "Khoisan Folk Music" "Nguni Folk Music" "Sotho-Tswana Folk Music" };
@@ -217,17 +218,18 @@ digraph {
             "Canadian Folk Music" -> { "Canadian Maritime Folk" "French-Canadian Folk Music" "Métis Fiddling" "Newfoundland Folk Music" };
                 "Canadian Maritime Folk" -> "Cape Breton Folk Music";
                     "Cape Breton Folk Music" -> "Cape Breton Fiddling";
-            "Caribbean Folk Music" -> { "Bele" "Benna" "Bomba" "Fungi" "Garifuna Folk Music" "Haitian Vodou Drumming" "Jibaro" "Kaiso" "Kitchen Dance Music" "Mento" "Méringue" "Plena" "Ripsaw" "Tumba" "Virgin Islander Cariso" };
+            "Caribbean Folk Music" -> { "Bele" "Benna" "Bomba" "Fungi" "Garifuna Music" "Haitian Vodou Drumming" "Jibaro" "Kaiso" "Kitchen Dance Music" "Mento" "Méringue" "Plena" "Ripsaw" "Tumba" "Virgin Islander Cariso" };
+                "Garifuna Music" -> "Punta";
             "Caucasian Folk Music" -> { "Abkhazian Folk Music" "Chechen Folk Music" "Circassian Folk Music" "Dagestani Folk Music" "Georgian Folk Music" "Ossetian Folk Music" };
                 "Dagestani Folk Music" -> "Avar Folk Music";
                 "Georgian Folk Music" -> "Batonebi Songs";
             "East Asian Folk Music" -> { "Amami shimauta" "Chinese Folk Music" "Indigenous Taiwanese Music" "Japanese Folk Music" "Korean Folk Music" "Vietnamese Folk Music" };
                 "Chinese Folk Music" -> { "Chaozhou xianshi" "Han Folk Music" "Haozi" "Jiangnan sizhu" "Shan'ge" };
                 "Japanese Folk Music" -> { "Heikyoku" "Kagura" "Kouta" "Min'yō" "Ondō" "Rōkyoku" "Taiko" "Tsugaru shamisen" };
-                "Korean Folk Music" -> { "Pansori" "Pungmul" "Sanjo" "Sinawi" };
+                "Korean Folk Music" -> { "Muak" "Pansori" "Pungmul" "Sanjo" "Sinawi" };
                 "Vietnamese Folk Music" -> { "Chèo" "Quan họ" "Xẩm" };
-            "European Folk Music" -> { "Alpine Folk Music" "Balkan Folk Music" "Baltic Folk Music" "Balto-Finnic Folk Music" "Basque Folk Music" "Catalan Folk Music" "Celtic Folk Music" "Dutch Folk Music" "English Folk Music" "Flemish Folk Music" "French Folk Music" "German Folk Music" "Għana" "Hungarian Folk Music" "Istrian Folk Music" "Italian Folk Music" "Neo-Medieval Folk" "Neo-Pagan Folk" "Nordic Folk Music" "Polka" "Portuguese Folk Music" "Romanian Folk Music" "Slavic Folk Music" "Spanish Folk Music" "Volga-Ural Folk Music" "Walloon Folk Music" "White Voice" "Yiddish Folksong" };
-                "Alpine Folk Music" -> { "Ländler" "Narodno zabavna glasba" "Naturjodel" };
+            "European Folk Music" -> { "Alpine Folk Music" "Balkan Folk Music" "Baltic Folk Music" "Balto-Finnic Folk Music" "Basque Folk Music" "Catalan Folk Music" "Celtic Folk Music" "Dutch Folk Music" "English Folk Music" "Flemish Folk Music" "French Folk Music" "German Folk Music" "Għana" "Hungarian Folk Music" "Istrian Folk Music" "Italian Folk Music" "Luxembourgish Folk Music" "Neo-Medieval Folk" "Neo-Pagan Folk" "Nordic Folk Music" "Polka" "Portuguese Folk Music" "Romanian Folk Music" "Slavic Folk Music" "Spanish Folk Music" "Volga-Ural Folk Music" "Walloon Folk Music" "White Voice" "Yiddish Folksong" };
+                "Alpine Folk Music" -> { "Canto degli Alpini" "Ländler" "Narodno zabavna glasba" "Naturjodel" };
                 "Balkan Folk Music" -> { "Albanian Folk Music" "Aromanian Folk Music" "Balkan Brass Band" "Bosnian Folk Music" "Bulgarian Folk Music" "Croatian Folk Music" "Csango Folk Music" "Gagauz Folk Music" "Ganga" "Greek Folk Music" "Macedonian Folk Music" "Montenegrin Folk Music" "Muzică lăutărească" "Serbian Folk Music" "Starogradska muzika" };
                     "Albanian Folk Music" -> { "Lab Polyphony" "Musika popullore" "Tosk Polyphony" };
                     "Bosnian Folk Music" -> { "Izvorna bosanska muzika" "Sevdalinka" };
@@ -242,7 +244,7 @@ digraph {
                     "Estonian Folk Music" -> "Seto leelo";
                     "Rune Singing" -> "Seto leelo";
                 "Basque Folk Music" -> "Trikitixa";
-                "Catalan Folk Music" -> { "Sardana" "Valencian Folk Music" };
+                "Catalan Folk Music" -> "Sardana";
                 "Celtic Folk Music" -> { "Breton Celtic Folk Music" "Cape Breton Folk Music" "Cornish Folk Music" "Irish Folk Music" "Manx Folk Music" "Scottish Folk Music" "Welsh Folk Music" };
                     "Breton Celtic Folk Music" -> "Bagad";
                     "Irish Folk Music" -> "Sean-nós";
@@ -255,8 +257,8 @@ digraph {
                     "Musette" -> "Swing musette";
                     "Occitan Folk Music" -> { "Auvergnat Folk Music" "Gascon Folk Music" };
                 "German Folk Music" -> "Gstanzl";
-                "Hungarian Folk Music" -> { "Csárdás" "Magyar nóta" };
-                "Italian Folk Music" -> { "Canzone napoletana" "Liscio" "Sardinian Folk Music" "Stornello" "Tarantella" "Trallalero" };
+                "Hungarian Folk Music" -> { "Csárdás" "Magyar nóta" "Pásztordal" };
+                "Italian Folk Music" -> { "Canto degli Alpini" "Canzone napoletana" "Liscio" "Sardinian Folk Music" "Stornello" "Tarantella" "Trallalero" };
                     "Sardinian Folk Music" -> { "Cantu a chiterra" "Cantu a tenore" };
                     "Tarantella" -> { "Pizzica" "Tammurriata" };
                 "Neo-Medieval Folk" -> "Bardcore";
@@ -264,7 +266,7 @@ digraph {
                     "Nordic Old Time Dance Music" -> "Polska";
                         "Polska" -> "Hambo";
                     "Swedish Folk Music" -> "Hambo";
-                "Polka" -> "Polka peruana";
+                "Polka" -> { "Chicago Polka" "Eastern-Style Polka" "Polka peruana" };
                 "Portuguese Folk Music" -> { "Cante alentejano" "Chamarrita açoriana" "Desgarrada" "Fado" "Trás-os-Montes Folk Music" "Vira" };
                     "Fado" -> "Fado de Coimbra";
                 "Romanian Folk Music" -> { "Bocet" "Colinde" "Doină" "Muzică lăutărească" };
@@ -278,6 +280,7 @@ digraph {
                     "Andalusian Folk Music" -> { "Saeta" "Sevillanas" };
                 "Volga-Ural Folk Music" -> { "Bashkir Folk Music" "Chuvash Folk Music" "Komi Folk Music" "Mari Folk Music" "Mordvin Folk Music" "Udmurt Folk Music" "Volga Tatar Folk Music" };
             "Hispanic American Folk Music" -> { "Bambuco" "Bomba" "Candombe" "Canto a lo poeta" "Carranga" "Chacarera" "Chamamé" "Chamarrita rioplatense" "Cueca" "Jibaro" "Joropo" "Malagueña venezolana" "Mexican Folk Music" "Milonga" "Muliza" "Música criolla peruana" "Música llanera" "Plena" "Saya" "Tamborito" "Taquirari" "Tonada chilena" "Yaraví" "Zamacueca" "Zamba" };
+                "Chamamé" -> "Chamamé tropical";
                 "Mexican Folk Music" -> { "Canto cardenche" "Pirekua" "Son calentano" "Son huasteco" "Son istmeño" "Son jarocho" "Trova yucateca" };
                 "Música criolla peruana" -> { "Festejo" "Landó" "Marinera" "Polka peruana" "Tondero" "Vals criollo" };
             "Indigenous American Traditional Music" -> { "Athabaskan Fiddling" "Inuit Vocal Games" "James Bay Fiddling" "Mapuche Folk Music" "Powwow Music" "Tonada potosina" "Unakesa" };
@@ -286,8 +289,10 @@ digraph {
                 "Bengali Folk Music" -> "Baul gaan";
                 "Bhojpuri Folk Music" -> "Biraha";
                 "Kirtan" -> "Shabad kirtan";
+                "Malayali Folk Music" -> "Mappila";
                 "Sinhalese Folk Music" -> "Sarala gee";
                 "Tamil Folk Music" -> "Urumi melam";
+                "Telugu Folk Music" -> "Burrakatha";
             "Southeast Asian Folk Music" -> { "Balitaw" "Bamar Folk Music" "Gondang" "Harana" "Hmong Folk Music" "Khmer Folk Music" "Kuda kepang" "Lao Folk Music" "Malay Folk Music" "Philippine Rondalla" "Tarawangsa" "Thai Folk Music" "Vietnamese Folk Music" };
                 "Thai Folk Music" -> "Fon leb";
             "West Asian Folk Music" -> { "Alevi Folk Music" "Armenian Folk Music" "Assyrian Folk Music" "Ayyalah" "Fijiri" "Israeli Folk Music" "Luri Folk Music" "Meyxana" "Persian Folk Music" "Turkish Folk Music" };
@@ -297,21 +302,21 @@ digraph {
             "Yodeling" -> { "Country Yodeling" "Naturjodel" };
 
     # Hip Hop
-    "Hip Hop" -> { "Abstract Hip Hop" "Afroswing" "Afro Trap" "Arabesque Rap" "Bongo Flava" "Boom Bap" "Bounce" "Chipmunk Soul" "Chopped and Screwed" "Christian Hip Hop" "Cloud Rap" "Comedy Rap" "Conscious Hip Hop" "Country Rap" "Crunk" "Detroit Sound" "Digicore" "Dirty South" "Disco Rap" "Drumless" "Emo Rap" "Experimental Hip Hop" "Genge" "G-Funk" "Hardcore Hip Hop" "Hipco" "Hiplife" "Hyphy" "Instrumental Hip Hop" "Jazz Rap" "Jerk" "Jersey Club Rap" "Jigg" "Jook" "Latin Rap" "Lo-Fi Hip Hop" "Lowend" "Miami Bass" "Mobb Music" "Motswako" "Nerdcore Hip Hop" "Nervous Music" "Philly Club Rap" "Political Hip Hop" "Pop Rap" "Ratchet" "Snap" "Trap" "Trap shaabi" "Turntablism" };
+    "Hip Hop" -> { "Abstract Hip Hop" "Afroswing" "Afro Trap" "Arabesque Rap" "Bongo Flava" "Boom Bap" "Bounce" "Chipmunk Soul" "Chopped and Screwed" "Christian Hip Hop" "Cloud Rap" "Comedy Rap" "Conscious Hip Hop" "Country Rap" "Crunk" "Crunkcore" "Detroit Sound" "Digicore" "Dirty South" "Disco Rap" "Drumless" "Emo Rap" "Experimental Hip Hop" "Genge" "G-Funk" "Hardcore Hip Hop" "Hipco" "Hiplife" "Hyphy" "Instrumental Hip Hop" "Jazz Rap" "Jerk" "Jersey Club Rap" "Jigg" "Jook" "Latin Rap" "Lo-Fi Hip Hop" "Lowend" "Miami Bass" "Mobb Music" "Motswako" "Nerdcore Hip Hop" "Nervous Music" "Philly Club Rap" "Political Hip Hop" "Pop Rap" "Ratchet" "Sigilkore" "Snap" "Stoner Rap" "Trap" "Trap shaabi" "Turntablism" };
+        "Bounce" -> "Sissy Bounce";
         "Comedy Rap" -> "Chap Hop";
-        "Crunk" -> "Crunkcore";
         "Detroit Sound" -> { "Flint Sound" "Philly Drill" };
         "Experimental Hip Hop" -> "Industrial Hip Hop";
         "Genge" -> "Gengetone";
-        "Hardcore Hip Hop" -> { "Britcore" "Gangsta Rap" "Horrorcore" "Memphis Rap" "Mid-School Hip Hop" "Trap Metal" };
-            "Gangsta Rap" -> { "Mafioso Rap" "Road Rap" "Scam Rap" };
+        "Hardcore Hip Hop" -> { "Britcore" "Chopper" "Gangsta Rap" "Horrorcore" "Memphis Rap" "Mid-School Hip Hop" "Trap Metal" };
+            "Gangsta Rap" -> { "Coke Rap" "Mafioso Rap" "Road Rap" "Scam Rap" };
             "Memphis Rap" -> { "Dungeon Rap" "Phonk" };
         "Hyphy" -> "Jerk Rap";
         "Instrumental Hip Hop" -> "Rare Phonk";
         "Jersey Club Rap" -> "Jersey Drill";
         "Latin Rap" -> "Chicano Rap";
         "Pop Rap" -> { "Bop" "Frat Rap" "Futuristic Swag" };
-        "Trap" -> { "Drill" "Futuristic Swag" "New Jazz" "No Melody" "Plugg" "Rage" "Rare Phonk" "Regalia" "Sigilkore" "Trap latino" "Trap Metal" "Trap Soul" "Tread" };
+        "Trap" -> { "Drill" "Futuristic Swag" "New Jazz" "No Melody" "Plugg" "Rage" "Rare Phonk" "Regalia" "Trap latino" "Trap Metal" "Trap Soul" "Tread" };
             "Drill" -> { "Chicago Drill" "Free Car Music" "Jersey Drill" "New York Drill" "Philly Drill" "UK Drill" };
                 "Chicago Drill" -> "Bop";
                 "New York Drill" -> { "Sample Drill" "Sexy Drill" };
@@ -325,7 +330,7 @@ digraph {
             "Industrial Metal" -> { "Cyber Metal" "Neue Deutsche Härte" };
             
     # Jazz
-    "Jazz" -> { "Afro-Jazz" "Arabic Jazz" "Avant-Garde Jazz" "Bebop" "Big Band" "British Dance Band" "Bulawayo Jazz" "Cape Jazz" "Cartoon Music" "Chamber Jazz" "Cool Jazz" "Crime Jazz" "Dark Jazz" "Dixieland" "ECM Style Jazz" "Ethio-Jazz" "Flamenco Jazz" "Hard Bop" "Indo Jazz" "Jazz-Funk" "Jazz Fusion" "Jazz manouche" "Jazz Poetry" "Kréyol djaz" "Latin Jazz"  "Marabi" "Modal Jazz" "Post-Bop" "Smooth Jazz" "Soul Jazz" "Spiritual Jazz" "Spy Music" "Stride" "Swing" "Third Stream" "Vocal Jazz" };
+    "Jazz" -> { "Afro-Jazz" "Arabic Jazz" "Avant-Garde Jazz" "Bebop" "Big Band" "British Dance Band" "Bulawayo Jazz" "Cape Jazz" "Cartoon Music" "Chamber Jazz" "Cool Jazz" "Crime Jazz" "Dark Jazz" "Dixieland" "ECM Style Jazz" "Ethio-Jazz" "Flamenco Jazz" "Hard Bop" "Indo Jazz" "Jazz-Funk" "Jazz Fusion" "Jazz manouche" "Jazz Poetry" "Kréyol djaz" "Latin Jazz"  "Marabi" "Modal Jazz" "Post-Bop" "Smooth Jazz" "Soul Jazz" "Spiritual Jazz" "Spy Music" "Stride" "Sweet Jazz" "Swing" "Third Stream" "Vocal Jazz" "West Coast Jazz" };
         "Avant-Garde Jazz" -> { "Experimental Big Band" "Free Jazz" };
             "Free Jazz" -> "European Free Jazz";
         "Big Band" -> { "Experimental Big Band" "Progressive Big Band" };
@@ -365,12 +370,13 @@ digraph {
     "New Age" -> { "Andean New Age" "Celtic New Age" "Native American New Age" "Neoclassical New Age" "New Age Kirtan" "Tibetan New Age" };
 
     # Pop
-    "Pop" -> { "Adult Contemporary" "Afrobeats" "Alt-Pop" "Arabic Pop" "Art Pop" "Balkan Pop-Folk" "Baroque Pop" "Bitpop" "Blue-Eyed Soul" "Boy Band" "Brega calypso" "Brill Building" "Bubblegum" "Cambodian Pop" "Canción melódica" "City Pop" "Classical Crossover" "Country Pop" "Dance-Pop" "Dangdut" "Dansbandsmusik" "Dansktop" "Electro Hop" "Electropop" "Europop" "Flamenco Pop" "Folk Pop" "French Pop" "Girl Group" "Hmong Pop" "Hyperpop" "Indian Pop" "Indie Pop" "Irish Showband" "Italo Pop" "Jazz Pop" "J-Pop" "Kayōkyoku" "Korean Ballad" "K-Pop" "Latin Pop" "Lokal musik" "Mulatós" "Nederpop" "New Music" "OPM" "Orthodox Pop" "Persian Pop" "Pop Batak" "Pop Ghazal" "Pop Minang" "Pop Raï" "Pop Reggae" "Pop Rock" "Pop Soul" "Pop Sunda" "P-Pop" "Progressive Pop" "Psychedelic Pop" "Rabiz" "Rigsar" "Rumba catalana" "Russian Chanson" "Schlager" "Sertanejo romântico" "Sertanejo universitário" "Sophisti-Pop" "Soviet Estrada" "Sunshine Pop" "Synthpop" "Teen Pop" "Toytown Pop" "T-Pop" "Traditional Pop" "Turkish Pop" "Vocal Trance" "Yé-yé" };
+    "Pop" -> { "Adult Contemporary" "Afrobeats" "Alt-Pop" "Arabic Pop" "Art Pop" "Balkan Pop-Folk" "Baroque Pop" "Bitpop" "Blue-Eyed Soul" "Boy Band" "Brega calypso" "Brill Building" "Bubblegum" "Cambodian Pop" "Canción melódica" "City Pop" "Classical Crossover" "Country Pop" "Dance-Pop" "Dangdut" "Dansbandsmusik" "Dansktop" "Electro Hop" "Electropop" "Europop" "Flamenco Pop" "Folk Pop" "French Pop" "Girl Group" "Hmong Pop" "Hyperpop" "Indian Pop" "Indie Pop" "Irish Showband" "Italo Pop" "Jazz Pop" "J-Pop" "Kayōkyoku" "Korean Ballad" "K-Pop" "Latin Pop" "Lokal musik" "Mulatós" "Nederpop" "New Music" "OPM" "Orthodox Pop" "Persian Pop" "Pop Batak" "Pop Ghazal" "Pop Minang" "Pop Raï" "Pop Reggae" "Pop Rock" "Pop Soul" "Pop Sunda" "P-Pop" "Progressive Pop" "Psychedelic Pop" "Rabiz" "Rigsar" "Rumba catalana" "Russian Chanson" "Schlager" "Sertanejo romântico" "Sertanejo universitário" "Sophisti-Pop" "Soviet Estrada" "Sunshine Pop" "Synthpop" "Teen Pop" "Toytown Pop" "Traditional Pop" "Turkish Pop" "Vocal Trance" "Yé-yé" };
         "Afrobeats" -> { "Afropiano" "Alté" };
         "Arabic Pop" -> { "Al jeel" "Mūsīqā lubnāniyya" };
         "Balkan Pop-Folk" -> { "Chalga" "Manele" "Modern Laika" "Musika popullore" "Muzică de mahala" "Skiladika" "Tallava" "Turbo-Folk" };
         "Cambodian Pop" -> "Rom kbach";
         "Canción melódica" -> { "Bolero-Beat" "Música cebolla" };
+        "City Pop" -> "Neo-City Pop";
         "Dangdut" -> "Dangdut koplo";
         "Indian Pop" -> "Bhojpuri Pop";
         "Indie Pop" -> { "Bedroom Pop" "C86" "Chamber Pop" "Neo-Acoustic" "Tontipop" "Twee Pop" };
@@ -383,7 +389,7 @@ digraph {
         "Latin Pop" -> { "Cumbia pop" "Tropipop" };
         "Nederpop" -> "Palingsound";
         "Pop Minang" -> "Talempong goyang";
-        "Pop Rock" -> { "Beat" "Big Music" "Britpop" "Jangle Pop" "Piano Rock" "Pop Yeh-Yeh" "Post-Britpop" "Power Pop" "Soft Rock" "Stereo" "Twee Pop" "Vocal Surf" };
+        "Pop Rock" -> { "Beat" "Beat Rock" "Big Music" "Britpop" "Jangle Pop" "Piano Rock" "Pop Yeh-Yeh" "Post-Britpop" "Power Pop" "Soft Rock" "Stereo" "Twee Pop" "Vocal Surf" };
             "Beat" -> { "Freakbeat" "Group Sounds" "Jovem Guarda" "Merseybeat" "Nederbeat" };
             "Jangle Pop" -> { "C86" "Dolewave" "Neo-Acoustic" "Paisley Underground" };
             "Soft Rock" -> { "Tropical Rock" "Yacht Rock" };
@@ -393,11 +399,11 @@ digraph {
         "Traditional Pop" -> { "British Dance Band" "Mood kayō" "Romanţe" "Standards" "Tin Pan Alley" };
     
     # Psychedelia
-    "Psychedelia" -> { "Neo-Psychedelia" "Psychedelic Folk" "Psychedelic Pop" "Psychedelic Rock" "Psychedelic Soul" "Psychploitation" "Stoner Metal" "Stoner Rock" "Tropicália" };
+    "Psychedelia" -> { "Neo-Psychedelia" "Psychedelic Folk" "Psychedelic Pop" "Psychedelic Rock" "Psychedelic Soul" "Psychsploitation" "Stoner Metal" "Stoner Rock" "Tropicália" };
         "Neo-Psychedelia" -> { "Baggy" "Dream Pop" "Hypnagogic Pop" "Paisley Underground" "Space Rock Revival" };
         "Psychedelic Rock" -> { "Acid Rock" "Freakbeat" "Garage Psych" "Heavy Psych" "Raga Rock" "Space Rock" "Xian Psych" "Zamrock" };
             "Space Rock" -> "Space Rock Revival";
-        "Psychploitation" -> "Sitarsploitation";
+        "Psychsploitation" -> "Sitarsploitation";
 
     # Punk
     "Punk" -> { "Art Punk" "Cowpunk" "Digital Hardcore" "Emo" "Folk Punk" "Hardcore [Punk]" "Mod Revival" "Pigfuck" "Post-Punk" "Proto-Punk" "Punk Blues" "Punk Rock" "Synth Punk" };
@@ -430,8 +436,9 @@ digraph {
 
     # Reggae / Ska / Dancehall
     "Reggae / Ska / Dancehall" -> { "Dancehall" "Reggae" "Rocksteady" "Ska" };
-        "Dancehall" -> { "Bubbling" "Digital Dancehall" "Flex Dance Music" "Gommance" "Ragga" "Shatta" "Zess" };
+        "Dancehall" -> { "Bubbling" "Digital Dancehall" "Flex Dance Music" "Gommance" "Ragga" "Shatta" "Trap Dancehall" "Zess" };
         "Reggae" -> { "Deejay" "Digital Dancehall" "Dub" "Lovers Rock" "Pacific Reggae" "Pop Reggae" "Roots Reggae" "Seggae" "Skinhead Reggae" };
+            "Pacific Reggae" -> "Jawaiian";
             "Roots Reggae" -> "Dub Poetry";
         "Ska" -> { "2 Tone" "Jamaican Ska" "New Tone" "Spouge" "Third Wave Ska" };
             "Third Wave Ska" -> "Ska Punk";
@@ -453,7 +460,7 @@ digraph {
                     "Tuareg Music" -> { "Takamba" "Tishoumaren" };
                 "Egyptian Music" -> { "Al jeel" "Ancient Egyptian Music" "Coptic Music" "Raqs baladi" "Sa'idi" "Shaabi" };
                     "Shaabi" -> { "Mahraganat" "Trap shaabi" };
-                "Maghrebi Music" -> { "Aita" "Algerian Chaabi" "Andalusian Classical Music" "Banga" "Gnawa" "Malhun" "Moroccan Chaabi" "Raï" };
+                "Maghrebi Music" -> { "Aita" "Algerian Chaabi" "Andalusian Classical Music" "Banga" "Gnawa" "Jilala Music" "Malhun" "Moroccan Chaabi" "Raï" };
                     "Raï" -> { "Pop Raï" "Traditional Raï" };
             "Northeastern African Music" -> { "Afar Music" "Beja Music" "Dinka Music" "Ethiopic Music" "Nubian Music" "Nuer Music" "Oromo Music" "Shilluk Music" "Somali Music" "Welayta Music" };
                 "Ethiopic Music" -> { "Azmari" "Ethio-Jazz" "Ethiopian Church Music" "Gurage Music" "Manzuma" "Tigrinya Music" "Tizita" };
@@ -481,24 +488,25 @@ digraph {
         "Asian Music" -> { "Buddhist Music" "Central Asian Music" "East Asian Music" "Ghazal" "North Asian Music" "South Asian Music" "Southeast Asian Music" "West Asian Music" };
             "Buddhist Music" -> { "Beompae" "Chöd" "Shōmyō" "Tibetan Buddhist Chant" };
             "Central Asian Music" -> { "Altai Music" "Balochi Music" "Bashkir Folk Music" "Burushaski Folk Music" "Central Asian Throat Singing" "Hazara Folk Music" "Karakalpak Traditional Music" "Kazakh Music" "Khakas Traditional Music" "Kyrgyz Traditional Music" "Mongolian Music" "Pamiri Music" "Pashto Folk Music" "Shashmaqam" "Sufiana kalam" "Tajik Music" "Tibetan Music" "Turkmen Music" "Uyghur Music" "Uzbek Music" };
-                "Central Asian Throat Singing" -> { "Mongolian Throat Singing" "Tuvan Throat Singing" };
+                "Central Asian Throat Singing" -> { "Kai" "Mongolian Throat Singing" "Tuvan Throat Singing" };
                 "Mongolian Music" -> { "Bogino duu" "Buryat Folk Music" "Kalmyk Music" "Mongolian Throat Singing" "Urtiin duu" "Zohioliin duu" };
                 "Pamiri Music" -> "Falak";
                 "Tibetan Music" -> { "Chöd" "Tibetan Buddhist Chant" "Zhabdro gorgom" };
                 "Uyghur Music" -> { "Bayawan" "Twelve Muqam" };
-            "East Asian Music" -> { "Ainu Music" "Chinese Music" "East Asian Classical Music" "East Asian Folk Music" "Japanese Music" "Korean Music" "Ryukyuan Music" "Vietnamese Music" }; 
+            "East Asian Music" -> { "Ainu Music" "Chinese Music" "East Asian Classical Music" "East Asian Folk Music" "Japanese Music" "Korean Music" "Manchu Music" "Ryukyuan Music" "Vietnamese Music" }; 
                 "Ainu Music" -> { "Upopo" "Yukar" };
-                "Chinese Music" -> { "Ancient Chinese Music" "Campus Folk" "Chinese Classical Music" "Chinese Folk Music" "Chinese Opera" "Minyue" "Quyi" "Shidaiqu" "Sizhu Music" "Taoist Ritual Music" "Xinyao" "Zhongguo feng" };
+                "Chinese Music" -> { "Ancient Chinese Music" "Campus Folk" "Chinese Classical Music" "Chinese Folk Music" "Chinese Opera" "Minyue" "Naxi Music" "Quyi" "Shidaiqu" "Sizhu Music" "Taoist Ritual Music" "Xibei feng" "Xinyao" "Zhongguo feng" };
                     "Chinese Opera" -> { "Cantonese Opera" "Henan Opera" "Kunqu Opera" "Peking Opera" "Shaoxing Opera" "Yangzhou Opera" };
                         "Peking Opera" -> { "Korean Revolutionary Opera" "Revolutionary Opera" };
+                    "Naxi Music" -> { "Baisha xiyue" "Dongjing" };
                     "Sizhu Music" -> { "Chaozhou xianshi" "Guangdong yinyue" "Jiangnan sizhu" "Nanyin" };
                 "Japanese Music" -> { "Eleki" "Enka" "Japanese Classical Music" "Japanese Folk Music" "Ryūkōka" };
                 "Korean Music" -> { "Beompae" "Changjak gugak" "Fusion Gugak" "Korean Classical Music" "Korean Folk Music" "Korean Revolutionary Opera" "Oriental Ballad" "Trot" };
                     "Trot" -> { "Pon-chak disco" "Semi-Trot" };
                 "Ryukyuan Music" -> { "Amami shimauta" "Okinawan Music" };
-                "Vietnamese Music" -> { "Bolero Việt Nam" "Cải lương" "Ca trù" "Ngâm thơ" "Nhạc đỏ" "Nhạc tiền chiến" "Nhạc vàng" "Tân cổ giao duyên" "Vietnamese Court Music" "Vietnamese Folk Music" };
-            "North Asian Music" -> { "Ainu Music" "Altai Music" "Buryat Folk Music" "Chukchi Folk Music" "Khakas Traditional Music" "Nivkh Music" "Ob-Ugric Folk Music" "Sakha Traditional Music" "Samoyedic Folk Music" "Tuvan Throat Singing" };
-            "South Asian Music" -> { "Adhunik geet" "Baila" "Balochi Music" "Bhajan" "Bhangra" "Dek Bass" "Dhol tasha" "Filmi" "Garba" "Ginan" "Indian Pop" "Indo Jazz" "Pop Ghazal" "Rigsar" "South Asian Classical Music" "South Asian Folk Music" "Sufiana kalam" "Sufi Rock" "Vedic Chant" };
+                "Vietnamese Music" -> { "Bolero Việt Nam" "Cải lương" "Ca trù" "Hát lô tô" "Ngâm thơ" "Nhạc đỏ" "Nhạc tiền chiến" "Nhạc vàng" "Tân cổ giao duyên" "Vietnamese Court Music" "Vietnamese Folk Music" };
+            "North Asian Music" -> { "Ainu Music" "Altai Music" "Chukchi Folk Music" "Kai" "Khakas Traditional Music" "Manchu Music" "Mongolian Music" "Nivkh Music" "Ob-Ugric Folk Music" "Sakha Traditional Music" "Samoyedic Folk Music" "Tuvan Throat Singing" };
+            "South Asian Music" -> { "Adhunik geet" "Baila" "Balochi Music" "Bhajan" "Bhangra" "Dek Bass" "Dhol tasha" "Filmi" "Gaana" "Garba" "Ginan" "Goan Music" "Indian Pop" "Indo Jazz" "Pop Ghazal" "Rigsar" "Sindhi Music" "South Asian Classical Music" "South Asian Folk Music" "Sufiana kalam" "Sufi Rock" "Vedic Chant" };
                 "Bhangra" -> "Folkhop";
             "Southeast Asian Music" -> { "Bamar Music" "Hill Tribe Music" "Indonesian Music" "Khmer Music" "Malay Music" "Molam" "Philippine Music" "Southeast Asian Classical Music" "Southeast Asian Folk Music" "Stereo" "Thai Music" "Vietnamese Music" "Xinyao" };
                 "Bamar Music" -> { "Bamar Folk Music" "Burmese Classical Music" "Mono" };
@@ -506,7 +514,7 @@ digraph {
                 "Indonesian Music" -> { "Balinese Music" "Batak Music" "Dangdut" "Gambang kromong" "Javanese Music" "Kakawin" "Keroncong" "Minangkabau Music" "Orkes gambus" "Qasidah modern" "Rapai dabõih" "Sundanese Music" "Tanjidor" };
                     "Balinese Music" -> { "Balinese Gamelan" "Kecak" };
                     "Batak Music" -> { "Gondang" "Pop Batak" };
-                    "Javanese Music" -> { "Campursari" "Javanese Gamelan" "Kuda kepang" "Langgam Jawa" };
+                    "Javanese Music" -> { "Campursari" "Dangdut koplo" "Javanese Gamelan" "Kuda kepang" "Langgam Jawa" };
                     "Keroncong" -> { "Cilokaq" "Langgam Jawa" };
                     "Minangkabau Music" -> { "Pop Minang" "Saluang klasik" "Talempong" };
                     "Sundanese Music" ->  { "Gamelan degung" "Jaipongan" "Kacapi suling" "Ketuk tilu" "Kliningan" "Pop Sunda" "Tarawangsa" "Tembang Sunda Cianjuran" };
@@ -523,10 +531,10 @@ digraph {
                 "Muzika mizrahit" -> "Muzikat dika'on";
                 "Persian Music" -> { "Achomi Music" "Bandari" "Koche bazari" "Persian Classical Music" "Persian Folk Music" "Persian Pop" };
                 "Turkish Music" -> { "Anatolian Rock" "Arabesk" "Fantezi" "Kanto" "Ottoman Military Music" "Özgün Müzik" "Turkish Classical Music" "Turkish Folk Music" "Turkish Pop" };
-        "Austronesian Music" -> { "Batak Music" "Igorot Music" "Indigenous Taiwanese Music" "Malagasy Music" "Pakacaping Music" };
-        "Caribbean Music" -> { "Aleke" "Bachata" "Brukdown" "Bullerengue" "Calypso" "Caribbean Folk Music" "Champeta" "Cuban Music" "Cumbia colombiana" "Dembow" "French Caribbean Music" "Goombay" "Indo-Caribbean Music" "Jamaican Music" "Junkanoo" "Kaseko" "Merengue" "Palo de mayo" "Parang" "Porro" "Punta" "Soca" "Steel Band" "Tropicanibalismo" "Vallenato" };
+        "Austronesian Music" -> { "Balinese Music" "Batak Music" "Igorot Music" "Indigenous Taiwanese Music" "Javanese Music" "Malagasy Music" "Pakacaping Music" "Sundanese Music" };
+        "Caribbean Music" -> { "Aleke" "Bachata" "Brukdown" "Bullerengue" "Calypso" "Caribbean Folk Music" "Champeta" "Cuban Music" "Cumbia colombiana" "Dembow" "French Caribbean Music" "Gaita zuliana" "Goombay" "Indo-Caribbean Music" "Jamaican Music" "Junkanoo" "Kaseko" "Merengue" "Palo de mayo" "Parang" "Porro" "Soca" "Steel Band" "Tropicanibalismo" "Vallenato" };
             "Calypso" -> { "Calipso venezolano" "Spouge" };
-            "Cuban Music" -> { "Chachachá" "Changüí" "Conga" "Cuban Charanga" "Cubaton" "Danzón" "Descarga" "Filin" "Guajira" "Guaracha" "Habanera" "Mambo" "Mozambique" "Pachanga" "Pilón" "Rumba cubana" "Santería Music" "Son cubano" "Songo" "Timba" "Trova" "Tumba francesa" };
+            "Cuban Music" -> { "Abakuá Music" "Chachachá" "Changüí" "Conga" "Cuban Charanga" "Cubaton" "Danzón" "Descarga" "Filin" "Guajira" "Guaracha" "Habanera" "Mambo" "Mozambique" "Pachanga" "Pilón" "Rumba cubana" "Santería Music" "Son cubano" "Songo" "Timba" "Trova" "Tumba francesa" };
                 "Cubaton" -> "Reparto";
                 "Rumba cubana" -> "Guaguancó";
                 "Son cubano" -> { "Bolero son" "Son montuno" };
@@ -539,17 +547,17 @@ digraph {
             "Jamaican Music" -> { "Dancehall" "Jamaican Ska" "Mento" "Nyahbinghi" "Reggae" "Rocksteady" };
             "Merengue" -> { "Mambo urbano" "Merecumbé" "Merengue típico" "Merenhouse" "Tecnomerengue" };
             "Soca" -> { "Bashment Soca" "Chutney Soca" "Dennery Segment" "Power Soca" "Rapso" };
-        "Central American Music" -> { "Brukdown" "Garifuna Folk Music" "Palo de mayo" "Punta" "Tamborera" "Tamborito" "Xuc" };
+        "Central American Music" -> { "Brukdown" "Garifuna Music" "Palo de mayo" "Son de pascua" "Son nica" "Tamborera" "Tamborito" "Xuc" };
         "Christian Liturgical Music" -> { "Anglican Chant" "Armenian Church Music" "Byzantine Chant" "Coptic Music" "Ethiopian Church Music" "Kyivan Chant" "Mass" "Passion" "Plainsong" "Russian Orthodox Liturgical Music" "Seinn nan salm" "Syriac Chant" };
             "Russian Orthodox Liturgical Music" -> { "Choral Concerto" "Znamenny Chant" };
-        "European Music" -> { "Alpenrock" "Ancient Roman Music" "Anglican Chant" "Ashkenazi Music" "Balkan Music" "Baroque Music" "Baroque Suite" "British Music" "Caucasian Music" "Celtic Electronica" "Celtic Metal" "Celtic New Age" "Celtic Punk" "Celtic Rock" "Chanson" "Classical Period" "Country & Irish" "Crimean Tatar Music" "Dechovka" "Dutch Cabaret" "European Folk Music" "Fanfare" "Finnish Tango" "German Music" "Grand opéra" "Greek Music" "Iberian Music" "Irish Showband" "Italian Music" "Kabarett" "Kalmyk Music" "Kleinkunst" "Kyivan Chant" "Madrigal" "Medieval Classical Music" "Mélodie" "Mittelalter-Metal" "Mittelalter-Rock" "Mulatós" "Nordic Music" "Nòva cançon" "Opéra-comique" "Polish Music" "Renaissance Music" "Romanian Music" "Russian Music" "Schlager" "Singspiel" "Tragédie en musique" "Trampská hudba" "Verismo" "Waltz" };
+        "European Music" -> { "Alpenrock" "Ancient Roman Music" "Anglican Chant" "Ashkenazi Music" "Balkan Music" "Baroque Music" "Baroque Suite" "British Music" "Caucasian Music" "Celtic Electronica" "Celtic Metal" "Celtic New Age" "Celtic Punk" "Celtic Rock" "Chanson" "Classical Period" "Country & Irish" "Crimean Tatar Music" "Dechovka" "Dutch Cabaret" "European Folk Music" "Fanfare" "Finnish Tango" "German Music" "Grand opéra" "Greek Music" "Iberian Music" "Irish Showband" "Italian Music" "Kabarett" "Kalmyk Music" "Kleinkunst" "Kyivan Chant" "Madrigal" "Medieval Classical Music" "Mélodie" "Mittelalter-Metal" "Mittelalter-Rock" "Mulatós" "Nordic Music" "Nòva cançon" "Opéra-comique" "Polish Music" "Renaissance Music" "Romanian Music" "Russian Music" "Schlager" "Schottische" "Singspiel" "Tragédie en musique" "Trampská hudba" "Verismo" "Waltz" };
             "Ashkenazi Music" -> { "Ashkenazi Cantorial Music" "Klezmer" "Yiddish Folksong" };
             "Balkan Music" -> { "Balkan Folk Music" "Balkan Pop-Folk" "Entechna" "Laika" "Romanţe" "Yu-Mex" };
                 "Entechna" -> { "Entechna laika" "Neo Kyma" };
                 "Laika" -> { "Entechna laika" "Modern Laika" "Skiladika" };
             "British Music" -> { "Ballad Opera" "British Brass Band" "British Dance Band" "British Folk Rock" "Change Ringing" "Concertina Band" "Contenance angloise" "Cornish Folk Music" "English Folk Music" "English Pastoral School" "Music Hall" "Sarum Chant" "Scottish Folk Music" "Welsh Folk Music" };
             "Chanson" -> { "Chanson alternative" "Chanson à texte" "Chanson québécoise" "Chanson réaliste" "Nouvelle chanson française" };
-            "German Music" -> { "Alsatian Folk Music" "German Folk Music" "Guggenmusik" "Ländler" "Lied" "Liedermacher" "Romantische Oper" "Volkstümliche Musik" "Zeitoper" };
+            "German Music" -> { "Alsatian Folk Music" "German Folk Music" "Guggenmusik" "Ländler" "Lied" "Liedermacher" "Luxembourgish Folk Music" "Romantische Oper" "Volkstümliche Musik" "Zeitoper" };
             "Greek Music" -> { "Ancient Greek Music" "Byzantine Music" "Entechna" "Greek Folk Music" "Laika" };
             "Iberian Music" -> { "Basque Folk Music" "Catalan Folk Music" "Euskal kantagintza berria" "Nova cançó" "Portuguese Music" "Spanish Music" "Villancico" };
                 "Portuguese Music" -> { "Música de intervenção" "Pimba" "Portuguese Folk Music" };
@@ -559,13 +567,13 @@ digraph {
             "Italian Music" -> { "Canto beneventano" "Canzone d'autore" "Lauda" "Old Roman Chant" "Opera buffa" "Opera semiseria" "Opera seria" };
             "Nordic Music" -> { "Dansbandsmusik" "Dansktop" "Greenlandic Music" "Nordic Folk Music" "Nordic Folk Rock" "Rautalanka" "Visa" };
                 "Greenlandic Music" -> { "Kalattut" "Tivaner inngernerlu" "Uaajeerneq" "Vaigat" };
-            "Polish Music" -> { "Disco polo" "Mazur" "Mazurka" "Miejski folk" "Poezja śpiewana" "Polish Folk Music" "Polonaise" };
+            "Polish Music" -> { "Chicago Polka" "Disco polo" "Eastern-Style Polka" "Mazur" "Mazurka" "Miejski folk" "Poezja śpiewana" "Polish Folk Music" "Polonaise" };
             "Romanian Music" -> { "Manele" "Muzică de mahala" "Romanian Etno Music" "Romanian Folk Music" "Romanţe" };
             "Russian Music" -> { "Avtorskaya pesnya" "Russian Chanson" "Russian Folk Music" "Russian Orthodox Liturgical Music" "Russian Romance" };
                 "Avtorskaya pesnya" -> "Bard Rock";
             "Waltz" -> { "Valsa brasileira" "Vals venezolano" };
         "Hispanic Music" -> { "Canción melódica" "Hispanic American Music" "Murga" "Philippine Rondalla" "Romance" "Spanish Music" };
-            "Hispanic American Music" -> { "Argentine Music" "Avanzada" "Bachata" "Bailecito" "Bolero" "Boogaloo" "Bullerengue" "Caporal" "Carnaval cruceño" "Champeta" "Chilean Music" "Chuntunqui romántico" "Conjunto andino" "Cuban Music" "Cumbia" "Currulao" "Dembow" "Gaita zuliana" "Guarania" "Hispanic American Folk Music" "Huayno" "Latin Alternative" "Latin American Classical Music" "Latin Disco" "Latin Electronic" "Latin Funk" "Latin Pop" "Latin Rock" "Latin Soul" "Merengue" "Mexican Music" "New Mexico Music" "Nueva canción latinoamericana" "Onda nueva" "Pasillo" "Peruvian Music" "Polka paraguaya" "Porro" "Reggaetón" "Rhumba" "Rioplatense Music" "Rock andino" "Salsa" "Tamborera" "Tropicanibalismo" "Vallenato" "Vals venezolano" "Xuc" };
+            "Hispanic American Music" -> { "Argentine Music" "Avanzada" "Bachata" "Bailecito" "Bolero" "Boogaloo" "Bullerengue" "Caporal" "Carnaval cruceño" "Champeta" "Chilean Music" "Chuntunqui romántico" "Conjunto andino" "Cuban Music" "Cumbia" "Currulao" "Dembow" "Gaita zuliana" "Guarania" "Hispanic American Folk Music" "Huayno" "Latin Alternative" "Latin American Classical Music" "Latin Disco" "Latin Electronic" "Latin Funk" "Latin Pop" "Latin Rock" "Latin Soul" "Merengue" "Mexican Music" "New Mexico Music" "Nueva canción latinoamericana" "Onda nueva" "Pasillo" "Peruvian Music" "Polka paraguaya" "Porro" "Reggaetón" "Rhumba" "Rioplatense Music" "Rock andino" "Salsa" "Son de pascua" "Son nica" "Tamborera" "Tropicanibalismo" "Vallenato" "Vals venezolano" "Xuc" };
                 "Argentine Music" -> { "Cuarteto" "Cumbia argentina" "Guaracha santiagueña" "Nuevo Cancionero" "RKT" };
                     "Cumbia argentina" ->  { "Cumbia santafesina" "Cumbia turra" "Cumbia villera" };
                 "Bolero" -> { "Bolero son" "Filin" };
@@ -585,30 +593,32 @@ digraph {
                         "Sierreño" -> "Corrido tumbado";
                 "Nueva canción latinoamericana" -> { "Nueva canción chilena" "Nueva trova" "Nuevo Cancionero" };
                 "Peruvian Music" -> { "Cumbia peruana" "Huaylarsh" "Música criolla peruana" "Tunantada" };
-                "Reggaetón" -> { "Bachatón" "Cubaton" "Cumbiatón" "Neoperreo" "RKT" "Romantic Style" };
+                "Reggaetón" -> { "Bachatón" "Cubaton" "Cumbiatón" "Doble paso" "Neoperreo" "RKT" "Romantic Style" };
                 "Rioplatense Music" -> { "Candombe" "Candombe beat" "Chamarrita rioplatense" "Cumbia pop" "Electrotango" "Milonga" "Murga uruguaya" "Tango" };
                     "Tango" -> { "Finnish Tango" "Tango nuevo" };
                 "Salsa" -> { "Salsa choke" "Salsa dura" "Salsa romántica" "Timba" };
-        "Indigenous American Music" -> { "Indigenous American Traditional Music" "Indigenous Andean Music" "Indigenous North American Music" "Mesoamerican Music" };
+        "Indigenous American Music" -> { "Garifuna Music" "Indigenous American Traditional Music" "Indigenous Andean Music" "Indigenous North American Music" "Mesoamerican Music" };
             "Indigenous Andean Music" -> { "Baguala" "Harawi" "Huaylarsh" "Huayno" "Morenada" "Tonada potosina" };
             "Indigenous North American Music" -> { "Athabaskan Fiddling" "Inuit Music" "James Bay Fiddling" "Métis Music" "Powwow Music" "Pueblo Music" };
                 "Inuit Music" -> { "Inuit Vocal Games" "Tivaner inngernerlu" "Uaajeerneq" };
                 "Métis Music" -> "Métis Fiddling";
             "Mesoamerican Music" -> { "Maya Music" "Nahua Music" "Pirekua" };
-        "Islamic Religious Music & Recitation" -> { "Ginan" "Maddahi" "Mataali" "Nasheed" "Rapai dabõih" "Turkish Mevlevi Music" };
+        "Islamic Religious Music & Recitation" -> { "Ginan" "Jilala Music" "Maddahi" "Mappila" "Mataali" "Nasheed" "Rapai dabõih" "Turkish Mevlevi Music" };
             "Maddahi" -> "Shoor";
         "Jewish Music" -> { "Ashkenazi Music" "Hasidic Music" "Jewish Liturgical Music" "Muzika mizrahit" "Muzika yehudit mekorit" "Oriental Jewish Music" "Orthodox Pop" "Sephardic Music" };
             "Hasidic Music" -> "Nigun";
             "Jewish Liturgical Music" ->  { "Ancient Levitical Music" "Chazzanut" "Kriyat haTorah" "Piyyut" };
                 "Chazzanut" -> "Ashkenazi Cantorial Music";
-            "Sephardic Music" -> { "Ladino Folksong" "Maftirim" };
-        "Northern American Music" -> { "Ambient Americana" "Americana" "American Folk Music" "American Primitivism" "Barbershop" "Boogie Woogie" "Canadian Folk Music" "Chanson québécoise" "Coon Song" "Country" "Country Rock" "Cowboy Poetry" "Greenlandic Music" "Hapa haole" "Indigenous North American Music" "Louisiana Music" "Minstrelsy" "New Mexico Music" "Pep Band" "Ragtime" "Roots Rock" "Sacred Steel" "Shaker Music" "Southern Gospel" "Texan Music" "Tin Pan Alley" "Vaudeville" };
+            "Oriental Jewish Music" -> "Baqashot";
+            "Piyyut" -> "Baqashot";
+            "Sephardic Music" -> { "Baqashot" "Ladino Folksong" "Maftirim" };
+        "Northern American Music" -> { "Ambient Americana" "Americana" "American Folk Music" "American Primitivism" "Barbershop" "Boogie Woogie" "Canadian Folk Music" "Chanson québécoise" "Chicago Polka" "Coon Song" "Country" "Country Rock" "Cowboy Poetry" "Eastern-Style Polka" "Foxtrot" "Greenlandic Music" "Hapa haole" "Indigenous North American Music" "Louisiana Music" "Minstrelsy" "New Mexico Music" "Pep Band" "Ragtime" "Roots Rock" "Sacred Steel" "Shaker Music" "Southern Gospel" "Texan Music" "Tin Pan Alley" "Vaudeville" };
             "Barbershop" -> "Jubilee";
             "Country Rock" -> "Cosmic Country";
             "Louisiana Music" -> { "Cajun Music" "New Orleans Brass Band" "New Orleans R&B" "Swamp Blues" "Swamp Pop" "Zydeco" };
                 "Cajun Music" -> "Traditional Cajun Music";
                 "Zydeco" -> "Nouveau zydeco";
-            "Ragtime" -> { "Cakewalk" "Honky-Tonk Piano" "Novelty Piano" "Stride" };
+            "Ragtime" -> { "Cakewalk" "Classic Ragtime" "Honky-Tonk Piano" "Novelty Piano" "Ragtime Song" "Stride" };
             "Roots Rock" -> { "Swamp Rock" "Tex-Mex" };
             "Texan Music" -> { "Acoustic Texas Blues" "Electric Texas Blues" "Tejano Music" "Tex-Mex" };
         "Oceanian Music" -> { "Australian Folk Music" "Indigenous Australian Traditional Music" "Melanesian Music" "Micronesian Music" "Pacific Reggae" "Polynesian Music" };
@@ -616,7 +626,7 @@ digraph {
                 "Fijian Music" -> "Vude";
             "Micronesian Music" -> "Kantan Chamorrita"
             "Polynesian Music" -> { "Fijian Music" "Hawaiian Music" "Himene tarava" "Māori Music" "Samoan Music" "Tahitian Music" };
-                "Hawaiian Music" -> { "Hapa haole" "Slack-Key Guitar" };
+                "Hawaiian Music" -> { "Hapa haole" "Jawaiian" "Slack-Key Guitar" };
         "Polyphonic Chant" -> { "Ars nova" "Ars subtilior" "Cante alentejano" "Cantu a tenore" "Contenance angloise" "Ganga" "Himene tarava" "Izvorna bosanska muzika" "Lab Polyphony" "Madrigal" "Paghjella" "Seto leelo" "Sutartinės" "Tosk Polyphony" "Trallalero" };
         "South American Music" -> { "Aleke" "Argentine Music" "Avanzada" "Bailecito" "Baithak gana" "Bambuco" "Brazilian Music" "Bullerengue" "Calipso venezolano" "Caporal" "Carnaval cruceño" "Carranga" "Chacarera" "Chamamé" "Champeta" "Chilean Music" "Chuntunqui romántico" "Conjunto andino" "Cueca" "Cumbia colombiana" "Currulao" "Gaita zuliana" "Guarania" "Indigenous Andean Music" "Joropo" "Kaseko" "Malagueña venezolana" "Mapuche Folk Music" "Muliza" "Música llanera" "Onda nueva" "Pasillo" "Payada" "Peruvian Music" "Polka paraguaya" "Porro" "Rioplatense Music" "Rock andino" "Salsa choke" "Saya" "Taquirari" "Tecnomerengue" "Vallenato" "Vals venezolano" "Yaraví" "Zamacueca" "Zamba" };
             "Brazilian Music" -> { "Brazilian Classical Music" "Brazilian Folk Music" "Brega" "Dobrado" "Funk brasileiro" "MPB" "Northeastern Brazilian Music" "Northern Brazilian Music" "Rock rural" "Samba" "Sertanejo" "Southeastern Brazilian Music" "Southern Brazilian Music" "Xote" };
@@ -643,13 +653,13 @@ digraph {
                     "Choro" -> "Samba-choro";
                 "Southern Brazilian Music" -> { "Bandinha" "Música gaúcha" };
                     "Música gaúcha" -> "Vanera";
-        "Sufi Music" -> { "Banga" "Kafi" "Manzuma" "Qawwali" "Rapai dabõih" "Sufiana kalam" "Sufi Rock" "Turkish Mevlevi Music" };
+        "Sufi Music" -> { "Banga" "Jilala Music" "Kafi" "Manzuma" "Qawwali" "Rapai dabõih" "Sufiana kalam" "Sufi Rock" "Turkish Mevlevi Music" };
         "Turkic-Mongolic Music" -> { "Altai Music" "Bashkir Folk Music" "Central Asian Throat Singing" "Karakalpak Traditional Music" "Khakas Traditional Music" "Kyrgyz Traditional Music" "Mongolian Music" "Sakha Traditional Music" };
     
     # Rock
     "Rock" -> { "Acoustic Rock" "Afro-Rock" "Alternative Rock" "Anatolian Rock" "AOR" "Art Punk" "Art Rock" "Bard Rock" "Blues Rock" "British Rhythm & Blues" "Candombe beat" "Christian Rock" "Comedy Rock" "Country Rock" "Cowpunk" "Deutschrock" "Emo" "Experimental Rock" "Folk Rock" "Funk Rock" "Garage Rock" "Glam Rock" "Hardcore [Punk]" "Hard Rock" "Heartland Rock" "Industrial Rock" "Jam Band" "Jazz-Rock" "Jersey Shore Sound" "Latin Rock" "Manguebeat" "Math Rock" "Metal" "Miejski folk" "New Wave" "Noise Rock" "Pop Rock" "Post-Punk" "Post-Rock" "Progressive Rock" "Proto-Punk" "Psychedelic Rock" "Pub Rock" "Punk Blues" "Punk Rock" "Rap Rock" "Reggae Rock" "Rock & Roll" "Rock andaluz" "Rock andino" "Rock Musical" "Rock Opera" "Roots Rock" "Southern Rock" "Sufi Rock" "Surf Music" "Symphonic Rock" "Tolai Rock" "Zolo" };
-        "Alternative Rock" -> { "Alternative Dance" "Baggy" "Britpop" "Dream Pop" "Emo-Pop" "Geek Rock" "Grunge" "Indie Rock" "Jangle Pop" "Mall Screamo" "Post-Britpop" "Post-Grunge" "Shimokita-kei" "Shoegaze" };
-            "Indie Rock" -> { "C86" "Dolewave" "Dunedin Sound" "Garage Rock Revival" "Indie Surf" "Math Pop" "Midwest Emo" "New Rave" "Noise Pop" "Post-Punk Revival" "Slacker Rock" "Slowcore" "Twee Pop" };
+        "Alternative Rock" -> { "Alternative Dance" "Britpop" "Dream Pop" "Emo-Pop" "Geek Rock" "Grunge" "Indie Rock" "Jangle Pop" "Mall Screamo" "Post-Britpop" "Post-Grunge" "Shimokita-kei" "Shoegaze" };
+            "Indie Rock" -> { "Baggy" "C86" "Dolewave" "Dunedin Sound" "Garage Rock Revival" "Indie Surf" "Math Pop" "Midwest Emo" "New Rave" "Noise Pop" "Post-Punk Revival" "Slacker Rock" "Slowcore" "Twee Pop" };
                 "Slacker Rock" -> "Shitgaze";
         "Blues Rock" -> "Boogie Rock";
         "Christian Rock" -> "Xian Psych";
@@ -663,7 +673,7 @@ digraph {
             "Glam Metal" -> "Sleaze Rock";
         "Jam Band" -> { "Jamgrass" "Livetronica" };
         "Math Rock" -> "Math Pop";
-        "New Wave" -> { "2 Tone" "Mod Revival" };
+        "New Wave" -> { "2 Tone" "Beat Rock" "Mod Revival" };
         "Noise Rock" -> { "Pigfuck" "Shitgaze" };
         "Progressive Rock" -> { "Avant-Prog" "Canterbury Scene" "Neo-Prog" "Symphonic Prog" };
             "Avant-Prog" -> { "Brutal Prog" "Zeuhl" };
@@ -671,11 +681,11 @@ digraph {
         "Rap Rock" -> "Rap Metal";
         "Rock & Roll" -> { "Indorock" "Rockabilly" "Twist" };
             "Rockabilly" -> "Psychobilly";
-        "Surf Music" -> { "Indie Surf" "Surf Punk" "Surf Rock" "Vocal Surf" };
+        "Surf Music" -> { "Hot Rod Music" "Indie Surf" "Surf Punk" "Surf Rock" "Vocal Surf" };
             "Surf Rock" -> { "Eleki" "Rautalanka" "Wong shadow" };
     
     # Scenes & Movements
-    "Scenes & Movements" -> { "Afrofuturism" "Alté" "Anarcho-Punk" "Asian Underground" "Aussie Pub Rock" "Beach Music" "Bérite Club" "Bloghouse" "Bosstown Sound" "Bristol Sound" "Britpop" "Brno Alternative Scene" "Brony Music" "Burger-Highlife" "Campus Folk" "Canterbury Scene" "Cascadian Black Metal" "CBGB Scene" "CCM" "Česká alternativní scéna" "Český underground" "Chicago School" "Christian Hardcore" "Clube da esquina" "Cocktail Nation" "C-Pop" "Dariacore" "Dek Bass" "Demoscene" "Deutschrock" "Dolewave" "Donosti Sound" "Doujin Music" "Dunedin Sound" "Düsseldorf School" "East Coast Hip Hop" "Emo Revival" "English Underground" "Epadunk" "Filk" "Florida Fast Music" "Fort Thunder Scene" "Franco-Flemish School" "Free Noise" "French Hip Hop" "Futurism" "Gothenburg Sound" "Grebo" "Greenwich Village Scene" "Group Sounds" "Hamburger Schule" "Harlem Renaissance" "Hauntology" "Hellenic Black Metal" "Hipco" "Hip-hopolo" "Hoboken Sound" "Holy Terror" "Japanese Hardcore" "Japanese Hip Hop" "Japanese Idol" "J-core" "Jersey Shore Sound" "Jovem Guarda" "J-Pop" "Kansai No Wave" "Kawaii Metal" "K-Pop" "LA Beat Scene" "Laurel Canyon Scene" "Leningrad Rock Club Scene" "Little Band Scene" "Loft Jazz" "Louisville Sound" "Madchester" "Maidcore" "Manguebeat" "Manila Sound" "Merseybeat" "Minneapolis Sound" "Młoda Polska" "Mod" "Motswako" "Movida madrileña" "Nederbeat" "Nerdcore Hip Hop" "Nerdcore Techno" "Neue Deutsche Welle" "Neue Volksmusik" "New Brunswick Basement Scene" "New London Jazz" "New Music" "New Orleans Blues" "New Partisans" "New Primitivism" "New Romantic" "New Tone" "New Weird America" "New Weird Finland" "New York Hardcore" "NOLA Sludge" "Northern Soul" "Nova srpska scena" "Nova vanguarda paulistana" "Novaya scena" "Novo Dub" "No Wave" "Nueva canción" "Nueva ola" "NWOBHM" "Onkyo" "OPM" "Palm Desert Scene" "Pop Kreatif" "Pop Yeh-Yeh" "Positive Punk" "P-Pop" "Progg" "Psichedelia occulta italiana" "Psychploitation" "Q-Pop"  "Queercore" "RABM" "Red Dirt" "Revolution Summer" "Riot Grrrl" "Road Rap" "Rock barrial" "Rock in Opposition" "Rock radical vasco" "Rock sónico" "Rock subterráneo" "Rock urbano español" "Rock urbano mexicano" "Romanticism" "Russemusikk" "San Francisco Sound" "Scottish Folk Revival" "Seapunk" "Second British Folk Revival" "Shibuya-kei" "Shimokita-kei" "Siberian Punk" "SoundClown" "Southern Hip Hop" "Sovietwave" "Straight Edge" "Swing Revival" "Teutonic Thrash Metal" "Texas Psychedelia Scene" "The Wave" "Tontipop" "T-Pop" "Tropicália" "Tropicanibalismo" "Udigrudi" "UK82" "UK Hip Hop" "Ultra" "Urban Grooves" "Vanguarda paulista" "Vietnamese New Wave" "Visual kei" "Vixa" "Vocaloid Scene" "Voëlvry Movement" "V-Pop" "West Coast Hip Hop" "West Side Sound" "Windmill Scene" "Wizard Rock" "Women's Music Movement" "Yass" "YTPMV" "Yugoslav New Wave" "Zamrock" "Zimdancehall" };
+    "Scenes & Movements" -> { "Afrofuturism" "Alté" "Anarcho-Punk" "Asian Underground" "Aussie Pub Rock" "Authenticité" "Bay Area Thrash Metal" "Beach Music" "Beijing New Sound" "Bérite Club" "Bloghouse" "Bosstown Sound" "Bristol Sound" "British Rhythm & Blues" "Britpop" "Brno Alternative Scene" "Brony Music" "Burger-Highlife" "Campus Folk" "Canterbury Scene" "Cascadian Black Metal" "CBGB Scene" "CCM" "Česká alternativní scéna" "Česká nová vlna" "Český underground" "Chicago No Wave" "Chicago School" "Christian Hardcore" "Cleveland Punk" "Clube da esquina" "Cocktail Nation" "C-Pop" "Dariacore" "Darmstadt School" "Dek Bass" "Demoscene" "Deutschrock" "Dolewave" "Donosti Sound" "Doujin Music" "Dunedin Sound" "Düsseldorf School" "East Coast Hip Hop" "Emo Revival" "English Underground" "Epadunk" "Filk" "First Wave of Detroit Techno" "Florida Fast Music" "Fort Thunder Scene" "Franco-Flemish School" "Free Noise" "French Hip Hop" "Furry Music" "Futurism" "Gothenburg Sound" "Grebo" "Greenwich Village Scene" "Group Sounds" "Hamburger Schule" "Harlem Renaissance" "Hauntology" "Hellenic Black Metal" "High Quality Rip" "Hipco" "Hip-hopolo" "Hoboken Sound" "Holy Terror" "Hưng ca" "Japanese Hardcore" "Japanese Hip Hop" "Japanese Idol" "J-core" "Jersey Shore Sound" "Jovem Guarda" "J-Pop" "Kansai No Wave" "Kawaii Metal" "K-Pop" "LA Beat Scene" "Laurel Canyon Scene" "Leningrad Rock Club Scene" "Little Band Scene" "Loft Jazz" "Louisville Sound" "Madchester" "Maidcore" "Manguebeat" "Manila Sound" "Mentai Rock" "Merseybeat" "Minneapolis Sound" "Młoda Polska" "Mod" "Moscow School" "Motswako" "Movida madrileña" "Nardcore" "Nederbeat" "Nerdcore Hip Hop" "Nerdcore Techno" "Neue Deutsche Welle" "Neue Volksmusik" "New Brunswick Basement Scene" "New London Jazz" "New Music" "New Orleans Blues" "New Partisans" "New Primitivism" "New Romantic" "New Tone" "New Wave of New Wave" "New Way of Danish Fuck You" "New Weird America" "New Weird Finland" "New York Hardcore" "New York School" "NOLA Sludge" "Northern Gothic" "Northern Soul" "Nova srpska scena" "Nova vanguarda paulistana" "Novaya scena" "Novo Dub" "No Wave" "Nueva canción" "Nueva ola" "NWOBHM" "Onkyo" "OPM" "Paisley Underground" "Palm Desert Scene" "Pansy Craze" "Pop Kreatif" "Pop Yeh-Yeh" "Positive Punk" "P-Pop" "Progg" "Psichedelia occulta italiana" "Psychsploitation" "Q-Pop"  "Queercore" "RABM" "Red Dirt" "Revolution Summer" "Riot Grrrl" "Road Rap" "Rock barrial" "Rock in Opposition" "Rock radical vasco" "Rock sónico" "Rock subterráneo" "Rock urbano español" "Rock urbano mexicano" "Roman School" "Romanticism" "Russemusikk" "San Diego Sound" "San Francisco Sound" "Scottish Folk Revival" "Scene" "Seapunk" "Second British Folk Revival" "Second Wave of Detroit Techno" "Shibuya-kei" "Shimokita-kei" "Siberian Punk" "SoundClown" "Southern Hip Hop" "Sovietwave" "Straight Edge" "Sunset Strip Glam Metal" "Swing Revival" "Teutonic Thrash Metal" "Texas Psychedelia" "The Wave" "Tontipop" "T-Pop" "Tropicália" "Tropicanibalismo" "Trova rosarina" "Udigrudi" "UK82" "UK Hip Hop" "Ultra" "Urban Grooves" "Vanguarda paulista" "Vietnamese New Wave" "Visual kei" "Vixa" "Vocaloid Scene" "Voëlvry Movement" "V-Pop" "Warez Scene" "West Coast Hip Hop" "West Side Sound" "Windmill Scene" "Wizard Rock" "Women's Music Movement" "Xibei feng" "Yass" "YTPMV" "Yugoslav New Wave" "Zamrock" "Zimdancehall" };
         "CCM" -> { "Praise & Worship" "Urban Contemporary Gospel" };
             "Praise & Worship" -> "Praise Break";
         "C-Pop" -> { "Cantopop" "Gufeng" "Hokkien Pop" "Mandopop" "Zhongguo feng" };
@@ -686,11 +696,13 @@ digraph {
         "J-core" -> "Future Core";
         "Mod" -> "Mod Revival";
         "Nueva canción" -> { "Nueva canción española" "Nueva canción latinoamericana" };
+        "Scene" -> "Happy Rock";
         "Shibuya-kei"-> { "Akishibu-kei" "Picopop" };
         "Southern Hip Hop" -> "South Florida SoundCloud Rap";
-        "Straight Edge" -> { "Krishnacore" "Vegan Straight Edge" };
+        "Straight Edge" -> { "Krishnacore" "Vegan Straight Edge" "Youth Crew" };
             "Vegan Straight Edge" -> { "H8000" "Hardline" };
         "Visual kei" -> { "Kote kei" "Nagoya kei" "Soft Visual" };
+        "Vocaloid Scene" -> "Utaite";
         "YTPMV" -> "OtoMAD";
 
     # Singer-Songwriter
